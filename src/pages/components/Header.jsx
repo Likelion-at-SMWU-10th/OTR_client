@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component{
   render(){
@@ -9,7 +10,9 @@ class Header extends React.Component{
         ㅤㅤㅤㅤ
       </div>
       <div className="app-logo">
-        <img className="app-logo" alt="logo" src="img/Logo.png" />
+        <Link to ="/">
+          <img className="app-logo" alt="logo" src="img/Logo.png" />
+        </Link>
       </div>
       </>
     )

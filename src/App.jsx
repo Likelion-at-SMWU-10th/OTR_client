@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
-import Header from './Components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginRegister from './Components/LoginRegister';
-import MainContent from './Components/MainContent';
 import './App.css';
+import {Routes, Route} from "react-router-dom";
+import Home from './pages/Home';
+import AboutOtr from './pages/AboutOtr';
+import WritingPage from './pages/WritingPage';
+import LoginPage from './pages/LoginPage';
 
 class App extends Component {
   render() {
     return (
       <>
-      <div className="App">
-        <Header/>
-      </div>
-      <div className="LoginRegister">
-        <LoginRegister/>
-      </div>
-      <div className="MainContent">
-        <MainContent/>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/details" element={<AboutOtr/>}></Route>
+        <Route path="/writing" element={<WritingPage/>}></Route>
+        <Route path="/login" element={<LoginPage/>}></Route>
+      </Routes>
       </>
     );
   }
