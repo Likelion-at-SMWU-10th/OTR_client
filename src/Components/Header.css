@@ -1,0 +1,11 @@
+.app-header{
+    background: linear-gradient(45deg, #DF7676, #FFFCB6,#E1FFD9,#B1F6FF,#DFBBFC);
+    margin: 0 auto;
+}
+
+.app-logo{
+    text-align: center;
+    width: 230px;
+    height: 90px;
+    margin: 0 auto;
+}
