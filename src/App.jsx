@@ -4,7 +4,7 @@ import './App.css';
 import {Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
 import AboutOtr from './pages/AboutOtr';
-import WritingPage from './pages/WritingPage';
+import SevenDays from './pages/SevenDays';
 import LoginPage from './pages/LoginPage';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/details" element={<AboutOtr/>}></Route>
-        <Route path="/writing" element={<WritingPage/>}></Route>
+        <Route path="/sevendays" element={<SevenDays/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
       </Routes>
       </>
