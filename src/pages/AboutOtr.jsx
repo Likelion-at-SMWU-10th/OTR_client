@@ -17,7 +17,9 @@ const AboutOtr = () => {
         <br/><br/><br/>
         <div class="contents"><img className="otrcard" src={OtrCard} /></div>
         <br/><br/><br/>
-        <div class="contents"><img src={StartButton} /></div>
+        <div class="contents">
+            <Link to ="/sevendays"><img src={StartButton} /></Link>
+        </div>
         </>
     );
 };
