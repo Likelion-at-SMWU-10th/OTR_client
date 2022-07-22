@@ -8,7 +8,7 @@ function MainContent() {
     <div className="carousel">
     <Carousel variant="dark">
       <Carousel.Item>
-        <Link to = "/writing">
+        <Link to = "/sevendays">
         <img
           className="d-block"
           src="img/main.png"

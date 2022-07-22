@@ -13,12 +13,12 @@ const AboutOtr = () => {
         <Header/>
         <LoginRegister/>
         <br/><br/><br/>
-        <div class="contents"><img src={OtrDetail} /></div>
+        <div class="contents"><img alt="aboutotr"src={OtrDetail} /></div>
         <br/><br/><br/>
-        <div class="contents"><img className="otrcard" src={OtrCard} /></div>
+        <div class="contents"><img className="otrcard" alt="otrcard" src={OtrCard} /></div>
         <br/><br/><br/>
         <div class="contents">
-            <Link to ="/sevendays"><img src={StartButton} /></Link>
+            <Link to ="/sevendays"><img alt="start" src={StartButton} /></Link>
         </div>
         </>
     );
