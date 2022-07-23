@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.QuestionCard {
+    padding-left: 298px;
+}
+
+.title {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: larger;
+}
