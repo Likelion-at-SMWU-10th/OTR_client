@@ -6,9 +6,10 @@ import './AnswerBox.css';
 function AnswerBox() {
   return (
     <>
-      <FloatingLabel controlId="floatingTextarea2" label="Leave your answer here..." className="box">
+      <FloatingLabel controlId="floatingTextarea2" label="답변을 입력해주세요" className="box">
         <Form.Control
           as="textarea"
+          placeholder= "답변을 입력해주세요"
           style={{ height: '300px' }}
         />
       </FloatingLabel>
