@@ -4,7 +4,12 @@
     padding-left: 298px;
 }
 
+.QuestionBox {
+    box-shadow: 3px 3px 11px 7px rgb(200, 200, 200);
+}
+
 .title {
     font-family: 'Do Hyeon', sans-serif;
     font-size: larger;
 }
+
