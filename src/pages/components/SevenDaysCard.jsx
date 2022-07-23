@@ -4,14 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SevenDaysCard() {
   return (
+    <>
     <div className="QuestionCard">
     <Card style={{ width: '937px'}} >
       <Card.Body>
-        <br/>
+        <br/><br/>
         <Card.Title>
             <div  className= "title" >
             Q1. 죽음에 대해 생각해 본 적이 있나요? 당신에게 죽음이란 무엇인가요?
-            </div>
+            </div>   
         </Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
         <Card.Text>
@@ -23,6 +24,7 @@ function SevenDaysCard() {
       </Card.Body>
     </Card>
     </div>
+    </>
   );
 }
 
