@@ -7,7 +7,7 @@ function SevenDaysCard() {
   return (
     <>
     <div className="QuestionCard">
-    <Card style={{ width: '937px'}}>
+    <Card style={{ width: '800px'}}>
       <Card.Body className="QuestionBox">
         <br/><br/>
         <Card.Title>
