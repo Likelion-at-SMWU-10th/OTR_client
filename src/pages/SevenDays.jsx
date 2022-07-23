@@ -13,6 +13,7 @@ const LoginPage = () => {
         <div class="notice"><img alt="notice"src={SevenDayNotice} /></div>
         <br/><br/><br/>
         <SevenDaysCard/>
+        <br/><br/><br/>
         </>
     );
 };
