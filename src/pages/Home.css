@@ -35,9 +35,9 @@
   }
   
   .MainContent {
-    width: 1480px;
+    width: 100%;
     text-align: center;
     padding-top: 70px;
-    padding-left: 309px;
-    padding-right: 263px;
+    padding-left: 20%;
+    padding-right: 20%;
   }
