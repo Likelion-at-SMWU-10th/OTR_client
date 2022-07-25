@@ -1,11 +1,9 @@
+#container {
+  display: flex;
+  justify-content: center;
+  width : 100%;
+}
 
-  .MainContent {
-    text-align: center;
-    padding-top: 70px;
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  
   .App-logo {
     height: 40vmin;
     pointer-events: none;
