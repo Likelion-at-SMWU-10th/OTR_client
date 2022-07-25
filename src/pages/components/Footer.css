@@ -1,25 +1,17 @@
 .footer {
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color: #ffffff;
+    height: 200px;
+    background-color: #F6F6F6;
+    position: relative;
 }
 
 .comment {
-	text-align: left;
     font-size: 10px;
-    background-color: #F6F6F6;
     color: #666666;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    position: absolute;
 }
 
 .icon {
     width: 30px;
     height: 30px;
-    padding: 3px;
-}
-
-.fixed {
-    width: 1920px;
 }
