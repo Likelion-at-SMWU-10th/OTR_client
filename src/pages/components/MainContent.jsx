@@ -31,7 +31,6 @@ function MainContent() {
         </Carousel.Item>
       </Carousel>
       </div>
-    
     </>
 
   );
