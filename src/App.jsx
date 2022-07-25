@@ -7,6 +7,12 @@ import AboutOtr from './pages/AboutOtr';
 import SevenDays from './pages/SevenDays';
 import LoginPage from './pages/LoginPage';
 import DayOne from './pages/DayOne';
+import DayTwo from './pages/DayTwo';
+import DayThree from './pages/DayThree';
+import DayFour from './pages/DayFour';
+import DayFive from './pages/DayFive';
+import DaySix from './pages/DaySix';
+import DaySeven from './pages/DaySeven';
 
 class App extends Component {
   render() {
@@ -18,6 +24,12 @@ class App extends Component {
         <Route path="/sevendays" element={<SevenDays/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
         <Route path="/dayone" element={<DayOne/>}></Route>
+        <Route path="/daytwo" element={<DayTwo/>}></Route>
+        <Route path="/daythree" element={<DayThree/>}></Route>
+        <Route path="/dayfour" element={<DayFour/>}></Route>
+        <Route path="/dayfive" element={<DayFive/>}></Route>
+        <Route path="/daysix" element={<DaySix/>}></Route>
+        <Route path="/dayseven" element={<DaySeven/>}></Route>
       </Routes>
       </>
     );

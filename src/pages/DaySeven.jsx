@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import SevenDaysNotice from './pageimg/SevenDaysNotice.png';
 import './DayOne.css';
-import DayOneCard from './components/DayOneCard';
+import DaySevenCard from './components/DaySevenCard';
 
-const DayOne = () => {
+const DaySeven = () => {
     return (
         <>
         <Header/>
         <br/><br/><br/>
-        <div class="notice"><img alt="notice"src={SevenDaysNotice} /></div>
+        <div class="notice"><img alt="notice"src={SevenDaysNotice}/></div>
         <br/><br/><br/>
-        <DayOneCard/>
+        <DaySevenCard/>
         <br/><br/><br/>
         </>
     );
 };
 
-export default DayOne;
+export default DaySeven;
