@@ -6,14 +6,15 @@ import './MainContent.css';
 function MainContent() {
   return (
     <>
-      <div className="carousel">
+
+      <div id="container">
       <Carousel variant="dark">
         <Carousel.Item>
           <Link to = "/sevendays">
           <img
             className="d-block"
             src="img/main.png"
-            style = {{ height : 500 }}       
+            style={{height : 450}}   
             alt="First slide"
           />
           </Link>
@@ -24,7 +25,7 @@ function MainContent() {
           <img
             className="d-block"
             src="img/main2.png"
-            style = {{ height : 500 }}    
+            style={{height : 450}}   
             alt="Second slide"
           />
           </Link>

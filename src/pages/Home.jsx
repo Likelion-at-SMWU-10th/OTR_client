@@ -15,7 +15,7 @@ class Home extends Component {
       <div className="LoginRegister">
         <LoginRegister/>
       </div>
-      <div className="MainContent">
+      <div id="Container">
         <MainContent/>
       </div>
       <br></br>
