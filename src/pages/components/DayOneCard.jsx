@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import './SevenDaysCard.css';
+import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AnswerBox from './AnswerBox';
 
