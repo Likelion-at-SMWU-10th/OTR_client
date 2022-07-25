@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
-import SevenDayNotice from './pageimg/SevenDayNotice.png';
+import SevenDaysNotice from './pageimg/SevenDaysNotice.png';
 import './DayOne.css';
 import SevenDaysCard from './components/SevenDaysCard';
 
-const LoginPage = () => {
+const DayOne = () => {
     return (
         <>
         <Header/>
         <br/><br/><br/>
-        <div class="notice"><img alt="notice"src={SevenDayNotice} /></div>
+        <div class="notice"><img alt="notice"src={SevenDaysNotice} /></div>
         <br/><br/><br/>
         <SevenDaysCard/>
         <br/><br/><br/>
@@ -18,4 +18,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default DayOne;
