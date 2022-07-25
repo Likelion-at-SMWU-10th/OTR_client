@@ -3,6 +3,11 @@
 }
 
 .otrcard {
-    padding-left: 10%;
-    padding-right: 10%;
+    margin: 0 auto;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width : 100%;
 }

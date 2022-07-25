@@ -12,9 +12,10 @@ class Home extends Component {
     return (
       <>
         <Header/>
-      <div className="LoginRegister">
+      <div id="LoginRegister">
         <LoginRegister/>
       </div>
+      <br/><br/>
       <div id="Container">
         <MainContent/>
       </div>
