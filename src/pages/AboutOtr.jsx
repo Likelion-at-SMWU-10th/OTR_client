@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import LoginRegister from './components/LoginRegister';
 import OtrDetail from './pageimg/OtrDetail.png';
 import OtrCard from './pageimg/OtrCard.png';
@@ -20,6 +21,7 @@ const AboutOtr = () => {
         <div class="contents">
             <Link to ="/sevendays"><img alt="start" src={StartButton} /></Link>
         </div>
+        <Footer />
         </>
     );
 };
