@@ -10,6 +10,7 @@ import DayOne from './pages/DayOne';
 import DayTwo from './pages/DayTwo';
 import DayThree from './pages/DayThree';
 import DayFour from './pages/DayFour';
+import DayFive from './pages/DayFive';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
         <Route path="/daytwo" element={<DayTwo/>}></Route>
         <Route path="/daythree" element={<DayThree/>}></Route>
         <Route path="/dayfour" element={<DayFour/>}></Route>
+        <Route path="/dayfive" element={<DayFive/>}></Route>
       </Routes>
       </>
     );
