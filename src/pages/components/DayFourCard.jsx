@@ -3,7 +3,7 @@ import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AnswerBox from './AnswerBox';
 
-function DayTwoCard() {
+function DayFourCard() {
   return (
     <>
     <div className="QuestionCard">
@@ -12,7 +12,7 @@ function DayTwoCard() {
         <br/><br/>
         <Card.Title>
             <div className= "title" >
-            Q2. 당신은 삶에서 어떤 기쁨을 발견하셨나요?
+            Q4. 네번째 질문
             </div>
             <br/><br/>
             <div className= "answer">
@@ -26,4 +26,4 @@ function DayTwoCard() {
   );
 }
 
-export default DayTwoCard;
+export default DayFourCard;

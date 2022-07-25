@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import DayOne from './pages/DayOne';
 import DayTwo from './pages/DayTwo';
 import DayThree from './pages/DayThree';
+import DayFour from './pages/DayFour';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
         <Route path="/dayone" element={<DayOne/>}></Route>
         <Route path="/daytwo" element={<DayTwo/>}></Route>
         <Route path="/daythree" element={<DayThree/>}></Route>
+        <Route path="/dayfour" element={<DayFour/>}></Route>
       </Routes>
       </>
     );
