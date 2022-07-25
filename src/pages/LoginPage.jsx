@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Login from './components/Login';
 
 const LoginPage = () => {
     return (
         <>
-        <h1> 로그인페이지 입니다! </h1>
-        <Link to ="/"><p>홈으로가기</p></Link>
+        <Header />
+        <br></br>
+        <br></br>
+        <Login />
+        <br></br>
+        <br></br>
+        <Footer />
         </>
     );
 };

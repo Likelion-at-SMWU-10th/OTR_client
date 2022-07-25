@@ -1,0 +1,21 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+
+.comment {
+	text-align: left;
+    font-size: 15px;
+    background-color: #F6F6F6;
+    color: #666666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
