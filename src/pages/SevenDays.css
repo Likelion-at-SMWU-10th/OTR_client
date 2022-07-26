@@ -1,3 +1,16 @@
 .notice {
     text-align: center;
 }
+
+#container {
+    display: flex;
+    justify-content: center;
+    width : 100%;
+}
+
+p {
+    text-align: center;
+    color: gray;
+    font-style: underline;
+    text-decoration: underline;
+}

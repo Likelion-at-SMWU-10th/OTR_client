@@ -4,6 +4,11 @@
   width : 100%;
 }
 
+#body-content {
+  margin-top: 80px;
+  padding-bottom: 100px; /* footer의 높이 */
+}
+
 #loginregister {
   display: flex;
   justify-content: center;

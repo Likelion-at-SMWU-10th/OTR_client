@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './AnswerBox.css';
 import SaveButton from './SaveButton';
 
+
 function AnswerBox() {
   return (
     <>
-      <FloatingLabel controlId="floatingTextarea2" label="답변을 입력해주세요" className="box">
+      <FloatingLabel controlId="floatingTextarea2" className="box">
         <Form.Control
           as="textarea"
-          placeholder= "답변을 입력해주세요"
+          placeholder = "답변을 입력해주세요" 
           style={{ height: '300px' }}
         />
       </FloatingLabel>
