@@ -20,7 +20,8 @@ class Home extends Component {
         <MainContent/>
       </div>
       <br></br>
-        <Footer />
+      <div className="footer">
+      </div>
       </>
     );
   }
