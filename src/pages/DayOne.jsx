@@ -19,6 +19,7 @@ const DayOne = () => {
             </div>
         </div>
         <br/><br/>
+        <Footer/>
         </>
     );
 };
