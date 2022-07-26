@@ -6,6 +6,7 @@ import AnswerBox from './AnswerBox';
 function SevenDaysCard() {
   return (
     <>
+    <div id = "container">
     <div className="QuestionCard">
     <Card style={{ width: '800px'}}>
       <Card.Body className="QuestionBox">
@@ -21,6 +22,7 @@ function SevenDaysCard() {
         </Card.Title>
       </Card.Body>
     </Card>
+    </div>
     </div>
     </>
   );
