@@ -17,10 +17,13 @@ class Home extends Component {
       </div>
       <br/><br/>
       <div id="Container">
+        <div id="body-content">
         <MainContent/>
+        </div>
       </div>
       <br></br>
       <div className="footer">
+        <Footer/>
       </div>
       </>
     );
