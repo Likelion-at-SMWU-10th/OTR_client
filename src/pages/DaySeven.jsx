@@ -12,7 +12,9 @@ const DaySeven = () => {
         <br/><br/><br/>
         <div class="notice"><img alt="notice"src={SevenDaysNotice}/></div>
         <br/><br/><br/>
+        <div id = "container">
         <DaySevenCard/>
+        </div>
         <br/><br/><br/>
         </>
     );
