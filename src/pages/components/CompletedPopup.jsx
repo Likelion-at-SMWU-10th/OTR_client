@@ -2,6 +2,7 @@ import React from 'react';
 import {Button , Modal} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CompletedPopup.css';
+import { Link } from 'react-router-dom';
 
 class CompletedPopup extends React.Component {
   constructor()
@@ -35,9 +36,11 @@ class CompletedPopup extends React.Component {
         <div id="container">
         <Modal.Footer>
           <div className="save-button">
-            <Button variant="secondary" onClick={()=>{this.handleModal()}}>
-              Close
+            <Link to = "/creatingpage">
+            <Button variant="secondary">
+              유서 쓰러 가기
             </Button>
+            </Link>
           </div>
         </Modal.Footer>
         </div>
