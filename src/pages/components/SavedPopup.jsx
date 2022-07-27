@@ -23,22 +23,20 @@ class CompletedPopup extends React.Component {
       <Modal show={this.state.show} onHide={()=>this.handleModal()}>
         <div id="container">
         <Modal.Header className="modal-header" closeButton>
-        <br/>🎉축하합니다! 7일 간의 문답을 모두 작성했습니다.ㅤㅤ 
-        <br/>마지막 단계로, 유서를 작성해볼까요?
-        <br/>
+        <br/>저장완료!!<br/>
         </Modal.Header>
         </div>
         <div id="container">
         <Modal.Body className="modal-body"> 
-          <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow.png" /><br/><br/>
+          <br/><br/>/*이미지삽입*/<br/><br/>
         </Modal.Body>
         </div>
         <div id="container">
         <Modal.Footer>
           <div className="save-button">
-            <Link to = "/creatingpage">
+            <Link to = "/">
             <Button variant="secondary">
-              유서 쓰러 가기
+              확인
             </Button>
             </Link>
           </div>
