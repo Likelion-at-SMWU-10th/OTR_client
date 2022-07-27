@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button ,Modal} from 'react-bootstrap';
+import {Button , Modal} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CompletedPopup.css';
 
@@ -18,11 +18,13 @@ class CompletedPopup extends React.Component {
   render () {
     return (
      <div>
-      <Button onClick={()=>{this.handleModal()}}> Save <Modal></Modal></Button>
-      <Modal show={this.state.show}>
+      <Button variant="secondary" onClick={()=>{this.handleModal()}}> Save </Button>
+      <Modal show={this.state.show} onHide={()=>this.handleModal()}>
         <div id="container">
-        <Modal.Header className="modal-header">
-        축하합니다!🎉 7일 간의 문답을 모두 작성했습니다. <br/>마지막 단계로, 유서를 작성해볼까요?
+        <Modal.Header className="modal-header" closeButton>
+        <br/>🎉축하합니다! 7일 간의 문답을 모두 작성했습니다.ㅤㅤ 
+        <br/>마지막 단계로, 유서를 작성해볼까요?
+        <br/>
         </Modal.Header>
         </div>
         <div id="container">
@@ -30,13 +32,15 @@ class CompletedPopup extends React.Component {
           <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow.png" /><br/><br/>
         </Modal.Body>
         </div>
+        <div id="container">
         <Modal.Footer>
           <div className="save-button">
-            <Button onClick={()=>{this.handleModal()}}>
+            <Button variant="secondary" onClick={()=>{this.handleModal()}}>
               Close
             </Button>
           </div>
         </Modal.Footer>
+        </div>
       </Modal>
       </div>
     );
