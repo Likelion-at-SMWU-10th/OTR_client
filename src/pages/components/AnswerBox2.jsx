@@ -1,7 +1,7 @@
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './AnswerBox.css';
+import './AnswerBox2.css';
 import CompletedPopup from './CompletedPopup';
 
 
