@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginRegister from './components/LoginRegister';
 import MainContent from './components/MainContent';
-import './Home.css';
+import Toast from './components/Toast';
+import './LoginedHome.css';
 
 
 class Home extends Component {
@@ -12,9 +12,10 @@ class Home extends Component {
     return (
       <>
         <Header/>
-      <div id="LoginRegister">
-        <LoginRegister/>
+      <div>
+      <Toast/>
       </div>
+      
       <br/><br/>
       <div id="Container">
         <div id="body-content">

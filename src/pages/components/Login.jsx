@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -15,7 +16,7 @@ const Login = () => {
                 <input type="password" name="password" class="text-field" placeholder="비밀번호"></input>
                 <br></br>
                 <br></br>
-                <input type="submit" value="로그인" class="submit-btn"></input>
+                <Link to = "/loginedHome"><input type="submit" value="로그인" class="submit-btn"></input></Link>
             </form>
 
             <div class="links">
