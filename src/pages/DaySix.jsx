@@ -4,6 +4,7 @@ import Header from './components/Header';
 import SevenDaysNotice from './pageimg/SevenDaysNotice.png';
 import './DayOne.css';
 import DaySixCard from './components/DaySixCard';
+import Footer from './components/Footer';
 
 const DaySix = () => {
     return (
@@ -12,8 +13,11 @@ const DaySix = () => {
         <br/><br/><br/>
         <div class="notice"><img alt="notice"src={SevenDaysNotice}/></div>
         <br/><br/><br/>
+        <div id  = "container">
         <DaySixCard/>
-        <br/><br/><br/>
+        </div>
+        <br/><br/>
+        <Footer/>
         </>
     );
 };

@@ -1,4 +1,9 @@
-.notice {
+.modal-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-body {
     text-align: center;
 }
 
@@ -6,8 +11,3 @@
     display: flex;
     justify-content: center;
 }
-
-#body-content {
-    height: 100%
-}
-
