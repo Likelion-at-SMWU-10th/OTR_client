@@ -7,7 +7,7 @@ class Header extends React.Component{
     return (
     <>
       <div className="app-header">
-        ㅤㅤㅤㅤ
+        &nbsp;
       </div>
       <div className="app-logo">
         <Link to ="/">
