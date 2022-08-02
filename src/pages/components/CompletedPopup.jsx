@@ -23,7 +23,7 @@ class CompletedPopup extends React.Component {
       <Modal show={this.state.show} onHide={()=>this.handleModal()}>
         <div id="container">
         <Modal.Header className="modal-header" closeButton>
-        <br/>🎉축하합니다! 7일 간의 문답을 모두 작성했습니다.ㅤㅤ 
+        <br/>🎉축하합니다! 7일 간의 문답을 모두 작성했습니다.&nbsp; 
         <br/>마지막 단계로, 유서를 작성해볼까요?
         <br/>
         </Modal.Header>

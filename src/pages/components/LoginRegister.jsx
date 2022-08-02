@@ -7,11 +7,11 @@ function PillExample() {
     <div className="Buttons">
       <Link to = "/login">
       <Badge pill bg="light" text="dark" className="lightbutton">
-      ㅤLog inㅤ
+      &nbsp;&nbsp;Log in&nbsp;&nbsp;
       </Badge></Link>
       {' '}
       <Badge pill bg="dark" className="darkbutton">
-      ㅤRegisterㅤ
+      &nbsp;&nbsp;Register&nbsp;&nbsp;
       </Badge>
     </div>
   );
