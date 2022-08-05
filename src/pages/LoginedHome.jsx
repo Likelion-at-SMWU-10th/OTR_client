@@ -13,9 +13,8 @@ class Home extends Component {
       <>
         <Header/>
       <div>
-      <Toast/>
+        <Toast/>
       </div>
-      
       <br/><br/>
       <div id="Container">
         <div id="body-content">

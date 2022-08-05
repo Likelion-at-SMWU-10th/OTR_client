@@ -6,10 +6,9 @@ import './MainContent.css';
 function MainContent() {
   return (
     <>
-
       <div id="container">
       <Carousel variant="dark">
-        <Carousel.Item>
+        <Carousel.Item className="card-content">
           <Link to = "/sevendays">
           <img
             className="d-block"
@@ -20,7 +19,7 @@ function MainContent() {
           </Link>
         </Carousel.Item>
         
-        <Carousel.Item>
+        <Carousel.Item className="card-content">
           <Link to = "/details">
           <img
             className="d-block"
