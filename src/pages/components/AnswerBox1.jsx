@@ -5,7 +5,7 @@ import './AnswerBox1.css';
 import SavedPopup from './SavedPopup';
 
 
-function AnswerBox() {
+function AnswerBox1() {
   return (
     <>
       <FloatingLabel controlId="floatingTextarea2" className="box">
@@ -23,4 +23,4 @@ function AnswerBox() {
   );
 }
 
-export default AnswerBox;
+export default AnswerBox1;

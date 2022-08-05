@@ -13,7 +13,7 @@ function DaySevenCard() {
         <br/><br/>
         <Card.Title>
             <div className= "title" >
-            Q7. 일곱번째 질문
+            Q7. 당신은 앞으로 어떻게 살고 싶나요? 또, 어떻게 죽고 싶나요?
             </div>
             <br/><br/>
             <div className= "answer">

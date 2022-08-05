@@ -18,32 +18,38 @@ class CompletedPopup extends React.Component {
   }
   render () {
     return (
-     <div>
-      <Button variant="secondary" onClick={()=>{this.handleModal()}}> 저장하기 </Button>
-      <Modal show={this.state.show} onHide={()=>this.handleModal()}>
-        <div id="container">
-        <Modal.Header className="modal-header" closeButton>
-        <br/>저장완료!!<br/>
-        </Modal.Header>
-        </div>
-        <div id="container">
-        <Modal.Body className="modal-body"> 
-          <br/><br/>/*이미지삽입*/<br/><br/>
-        </Modal.Body>
-        </div>
-        <div id="container">
-        <Modal.Footer>
-          <div className="save-button">
-            <Link to = "/">
-            <Button variant="secondary">
-              확인
-            </Button>
-            </Link>
+      <>
+      <div>
+        <Button variant="secondary" onClick={()=>{this.handleModal()}}> 저장하기 </Button>
+        <Modal show={this.state.show} onHide={()=>this.handleModal()}>
+          <div id="container">
+          <Modal.Header className="modal-header" closeButton>
+          <br/>
+          <br/>무지개의 첫번째 색이 채워졌습니다. 
+          <br/>앞으로 일주일 간 열리는 문답을 모두 작성하여 &nbsp;
+          <br/>무지개를 완성해보세요!
+          <br/>
+          </Modal.Header>
           </div>
-        </Modal.Footer>
+          <div id="container">
+          <Modal.Body className="modal-body"> 
+            <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow1.png" /><br/><br/>
+          </Modal.Body>
+          </div>
+          <div id="container">
+          <Modal.Footer>
+            <div className="save-button">
+              <Link to = "/mypage">
+              <Button variant="secondary">
+                확인
+              </Button>
+              </Link>
+            </div>
+          </Modal.Footer>
+          </div>
+        </Modal>
         </div>
-      </Modal>
-      </div>
+      </>
     );
   }
 }   
