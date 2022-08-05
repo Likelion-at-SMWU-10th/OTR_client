@@ -1,0 +1,13 @@
+.notice {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#body-content {
+    height: 100%
+}
+

@@ -24,8 +24,8 @@ class CompletedPopup extends React.Component {
         <Modal show={this.state.show} onHide={()=>this.handleModal()}>
           <div id="container">
           <Modal.Header className="modal-header">
-          <br/>무지개의 첫번째 색이 채워졌습니다. 
-          <br/>앞으로 일주일 간 열리는 문답을 모두 작성하여 &nbsp;
+          <br/>무지개의 첫번째 색이 채워졌습니다.
+          <br/>앞으로 일주일 간 열리는 문답을 모두 작성하여
           <br/>무지개를 완성해보세요!
           <br/>
           </Modal.Header>
