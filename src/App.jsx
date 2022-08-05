@@ -15,6 +15,7 @@ import DaySix from './pages/DaySix';
 import DaySeven from './pages/DaySeven';
 import LoginedHome from './pages/LoginedHome';
 import CreatingPage from './pages/CreatingPage';
+import MyPage from './pages/MyPage';
 
 class App extends Component {
   render() {
@@ -34,6 +35,7 @@ class App extends Component {
         <Route path="/dayseven" element={<DaySeven/>}></Route>
         <Route path="/loginedHome" element={<LoginedHome/>}></Route>
         <Route path="/creatingpage" element={<CreatingPage/>}></Route>
+        <Route path="/mypage" element={<MyPage/>}></Route>
       </Routes>
       </>
     );

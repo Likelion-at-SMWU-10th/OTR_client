@@ -26,7 +26,7 @@ function DismissibleExample() {
               alt=""
             />
             <strong className="me-auto">김멋사 님</strong>
-            <button className='bt'><strong>이어서 작성하기</strong></button>
+            <Link to = "/mypage"><button className='bt'><strong>이어서 작성하기</strong></button></Link>
           </Toast.Header>
           <Toast.Body className="tobody">
           <strong className='lg'>마이페이지</strong><br></br>
