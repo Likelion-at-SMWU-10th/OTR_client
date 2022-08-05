@@ -23,9 +23,8 @@ class CompletedPopup extends React.Component {
         <Button variant="secondary" onClick={()=>{this.handleModal()}}> 저장하기 </Button>
         <Modal show={this.state.show} onHide={()=>this.handleModal()}>
           <div id="container">
-          <Modal.Header className="modal-header" closeButton>
-          <br/>
-          <br/>무지개의 첫번째 색이 채워졌습니다. 
+          <Modal.Header className="modal-header">
+          <br/>무지개의 두번째 색이 채워졌습니다. 
           <br/>앞으로 일주일 간 열리는 문답을 모두 작성하여 &nbsp;
           <br/>무지개를 완성해보세요!
           <br/>
@@ -33,7 +32,7 @@ class CompletedPopup extends React.Component {
           </div>
           <div id="container">
           <Modal.Body className="modal-body"> 
-            <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow1.png" /><br/><br/>
+            <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow2.png" /><br/><br/>
           </Modal.Body>
           </div>
           <div id="container">
@@ -41,7 +40,7 @@ class CompletedPopup extends React.Component {
             <div className="save-button">
               <Link to = "/mypage">
               <Button variant="secondary">
-                확인
+                완료
               </Button>
               </Link>
             </div>
