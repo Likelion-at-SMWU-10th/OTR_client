@@ -1,3 +1,5 @@
+
+
 #Btt {
     background-color: #48BA7B;
     border-width: 4px;
@@ -22,14 +24,14 @@
 }
 
 .bt {
-    border-radius: 2em;
-    border-color: #48BA7B;
+    border-color:#48BA7B;
     border-width: 3px;
+    border-radius: 2em;
     color: #48BA7B;
 }
 
 .tobody {
-    text-align: right;
+    text-align: left;
 }
 
 .logout {

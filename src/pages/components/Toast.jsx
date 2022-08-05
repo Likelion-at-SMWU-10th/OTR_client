@@ -12,9 +12,9 @@ function DismissibleExample() {
   const toggleShowB = () => setShowB(!showB);
 
   return (
-    <div className='Toast'>
+    <div className='toast-whole'>
     <Row>
-      <Col md={6} className="mb-2" id="Buttons">
+      <Col md={6} className="mb-6" id="Buttons">
         <Button onClick={toggleShowB} className="mb-2" id="Btt">
           <strong>김멋사 님</strong>
         </Button>
@@ -25,13 +25,12 @@ function DismissibleExample() {
               className="rounded me-2"
               alt=""
             />
-            <strong className="me-auto">김멋사 님</strong>
-            <Link to = "/mypage"><button className='bt'><strong>이어서 작성하기</strong></button></Link>
+            <strong className="me-auto">김멋사 님&nbsp;<small>개인정보 수정</small></strong>
           </Toast.Header>
           <Toast.Body className="tobody">
-          <strong className='lg'>마이페이지</strong><br></br>
-          <strong className='lg'>개인정보 수정</strong><br></br><br></br>
-          <Link to = "/"><button className='logout'><strong className='lg'>로그아웃</strong></button></Link></Toast.Body>
+          <Link to = "/mypage"><button className='bt'><strong>이어서 작성하기</strong></button></Link>{' '}
+          <Link to = "/"><button className='logout'><strong className='lg'>로그아웃</strong></button></Link>
+          </Toast.Body>
         </Toast>
       </Col>
     </Row>
