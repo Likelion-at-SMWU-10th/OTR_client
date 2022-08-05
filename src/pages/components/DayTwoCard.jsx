@@ -12,7 +12,7 @@ function DayTwoCard() {
         <br/><br/>
         <Card.Title>
             <div className= "title" >
-            Q2. 당신은 삶에서 어떤 기쁨을 발견하셨나요?
+            Q2. 나의 장례식은 어떤 분위기였으면 좋겠나요?
             </div>
             <br/><br/>
             <div className= "answer">
