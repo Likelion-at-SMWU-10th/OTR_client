@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AnswerBox2 from './AnswerBox2';
+import AnswerBox7 from './AnswerBox7';
 
 
 function DaySevenCard() {
@@ -13,11 +13,11 @@ function DaySevenCard() {
         <br/><br/>
         <Card.Title>
             <div className= "title" >
-            Q7. 일곱번째 질문
+            Q7. 당신은 앞으로 어떻게 살고 싶나요? 또, 어떻게 죽고 싶나요?
             </div>
             <br/><br/>
             <div className= "answer">
-              <AnswerBox2/>
+              <AnswerBox7/>
             </div>
         </Card.Title>
       </Card.Body>

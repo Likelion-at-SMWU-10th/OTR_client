@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AnswerBox1 from './AnswerBox1';
+import AnswerBox2 from './AnswerBox2';
 
 function DayTwoCard() {
   return (
@@ -16,7 +16,7 @@ function DayTwoCard() {
             </div>
             <br/><br/>
             <div className= "answer">
-            <AnswerBox1/>
+            <AnswerBox2/>
             </div> 
         </Card.Title>
       </Card.Body>

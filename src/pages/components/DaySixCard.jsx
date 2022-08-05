@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AnswerBox1 from './AnswerBox1';
+import AnswerBox6 from './AnswerBox6';
 
 function DaySixCard() {
   return (
@@ -12,11 +12,12 @@ function DaySixCard() {
         <br/><br/>
         <Card.Title>
             <div className= "title" >
-            Q6. 여섯번째 질문
+            Q6. 나는 어떨 때 고마움과 미안함을 느끼나요? 
+            고마운 사람과 미안한 사람이 <br/> 생각난다면 적어보세요.
             </div>
             <br/><br/>
             <div className= "answer">
-            <AnswerBox1/>
+            <AnswerBox6/>
             </div> 
         </Card.Title>
       </Card.Body>

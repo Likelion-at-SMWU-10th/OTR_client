@@ -1,11 +1,11 @@
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './AnswerBox1.css';
-import SavedPopup1 from './SavedPopup1';
+import './AnswerBox7.css';
+import CompletedPopup from './CompletedPopup';
 
 
-function AnswerBox1() {
+function AnswerBox7() {
   return (
     <>
       <FloatingLabel controlId="floatingTextarea2" className="box">
@@ -17,10 +17,10 @@ function AnswerBox1() {
       </FloatingLabel>
       <br/><br/>
       <div className= "completed">
-      <SavedPopup1/>
+      <CompletedPopup/>
       </div>
     </>
   );
 }
 
-export default AnswerBox1;
+export default AnswerBox7;

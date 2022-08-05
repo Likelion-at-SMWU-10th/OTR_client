@@ -30,7 +30,7 @@ class CompletedPopup extends React.Component {
         </div>
         <div id="container">
         <Modal.Body className="modal-body"> 
-          <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow.png" /><br/><br/>
+          <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow7.png" /><br/><br/>
         </Modal.Body>
         </div>
         <div id="container">
