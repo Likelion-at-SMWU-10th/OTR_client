@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AnswerBox1 from './AnswerBox1';
+import AnswerBox4 from './AnswerBox4';
 
 function DayFourCard() {
   return (
@@ -12,11 +12,11 @@ function DayFourCard() {
         <br/><br/>
         <Card.Title>
             <div className= "title" >
-            Q4. 네번째 질문
+            Q4. 인생에서 가장 행복했던 일을 적어주세요.
             </div>
             <br/><br/>
             <div className= "answer">
-            <AnswerBox1/>
+            <AnswerBox4/>
             </div> 
         </Card.Title>
       </Card.Body>
