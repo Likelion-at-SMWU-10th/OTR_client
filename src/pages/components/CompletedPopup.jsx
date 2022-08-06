@@ -23,9 +23,11 @@ class CompletedPopup extends React.Component {
       <Modal show={this.state.show} onHide={()=>this.handleModal()}>
         <div id="container">
         <Modal.Header className="modal-header">
-        <br/>🎉축하합니다! 7일 간의 문답을 모두 작성했습니다.&nbsp; 
+        <div class="popup-notice">
+        <br/>🎉축하합니다! <span class="violet">7일 간의 문답</span>을 모두 작성했습니다.
         <br/>마지막 단계로, 유서를 작성해볼까요?
         <br/>
+        </div>
         </Modal.Header>
         </div>
         <div id="container">
@@ -36,11 +38,9 @@ class CompletedPopup extends React.Component {
         <div id="container">
         <Modal.Footer>
           <div className="save-button">
-            <Link to = "/creatingpage">
-            <Button variant="secondary">
-              유서 쓰러 가기
-            </Button>
-            </Link>
+              <Link to = "/creatingpage">
+              <Button class="white-button" variant="outline-dark">&nbsp;유서 쓰러 가기&nbsp;</Button>
+              </Link>
           </div>
         </Modal.Footer>
         </div>

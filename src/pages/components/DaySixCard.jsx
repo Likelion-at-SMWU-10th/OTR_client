@@ -13,7 +13,7 @@ function DaySixCard() {
         <Card.Title>
             <div className= "title" >
             Q6. 나는 어떨 때 고마움과 미안함을 느끼나요? 
-            <br/><br/>고마운 사람과 미안한 사람이생각난다면 적어보세요.
+            <br/><br/>고마운 사람과 미안한 사람이 생각난다면 적어보세요.
             </div>
             <br/><br/>
             <div className= "answer">
