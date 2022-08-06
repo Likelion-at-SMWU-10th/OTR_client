@@ -18,7 +18,6 @@ function MainContent() {
           />
           </Link>
         </Carousel.Item>
-        
         <Carousel.Item className="card-content">
           <Link to = "/details">
           <img

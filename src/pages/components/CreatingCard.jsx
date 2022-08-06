@@ -31,6 +31,7 @@ function DayTwoCard() {
             <div className= "answer">
             <CreatingBox/>
             </div>
+            
         </Card.Title>
       </Card.Body>
     </Card>

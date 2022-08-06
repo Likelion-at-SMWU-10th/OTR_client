@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button , Modal} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './CompletedPopup.css';
+import './SavedPopup.css';
 import { Link } from 'react-router-dom';
 
 class CompletedPopup extends React.Component {
@@ -24,10 +24,12 @@ class CompletedPopup extends React.Component {
         <Modal show={this.state.show} onHide={()=>this.handleModal()}>
           <div id="container">
           <Modal.Header className="modal-header">
-          <br/>무지개의 네번째 색이 채워졌습니다. 
-          <br/>앞으로 일주일 간 열리는 문답을 모두 작성하여 &nbsp;
+          <div class ="popup-notice">
+          <br/>무지개의 <span class="green">네번째 색</span>이 채워졌습니다.
+          <br/>앞으로 일주일 간 열리는 문답을 모두 작성하여
           <br/>무지개를 완성해보세요!
           <br/>
+          </div>
           </Modal.Header>
           </div>
           <div id="container">
@@ -39,9 +41,7 @@ class CompletedPopup extends React.Component {
           <Modal.Footer>
             <div className="save-button">
               <Link to = "/mypage">
-              <Button variant="secondary">
-                완료
-              </Button>
+              <Button class="white-button" variant="outline-dark">&nbsp;완료&nbsp;</Button>
               </Link>
             </div>
           </Modal.Footer>
