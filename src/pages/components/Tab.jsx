@@ -4,6 +4,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import './Tab.css';
 import QList1 from './QList1';
 import QList2 from './QList2';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ControlledTabsExample() {
   const [key, setKey] = useState('home');
@@ -16,10 +17,10 @@ function ControlledTabsExample() {
       onSelect={(k) => setKey(k)}
       className="mb-3"
     >
-      <Tab eventKey="home" title="문답">
+      <Tab eventKey="home" title="문답" tabClassName="font">
         <QList1/>
       </Tab>
-      <Tab eventKey="profile" title="나의 유서">
+      <Tab eventKey="profile" title="나의 유서" tabClassName="font">
         <QList2/>
       </Tab>
     </Tabs>
