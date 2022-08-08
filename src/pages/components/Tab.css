@@ -7,3 +7,9 @@
     margin: 0 auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+.font {
+    color: rgb(188, 144, 0);
+    font-size: 20px;
+    font-weight: bolder;
+  }
