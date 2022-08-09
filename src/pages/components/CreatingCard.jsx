@@ -3,7 +3,7 @@ import './CreatingCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CreatingBox from './CreatingBox';
 
-function DayTwoCard() {
+function CreatingCard() {
   return (
     <>
     <div className="QuestionCard">
@@ -40,4 +40,4 @@ function DayTwoCard() {
   );
 }
 
-export default DayTwoCard;
+export default CreatingCard;
