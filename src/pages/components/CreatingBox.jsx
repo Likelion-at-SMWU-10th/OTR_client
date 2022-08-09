@@ -26,7 +26,7 @@ function CreatingBox() {
           </div>
         </div>
           <div class="text-area">
-            <FloatingLabel controlId="floatingTextarea2" className="box">
+            <FloatingLabel controlId="floatingTextarea" className="box">
               <Form.Control
               as="textarea"
               placeholder = "답변을 입력해주세요" 

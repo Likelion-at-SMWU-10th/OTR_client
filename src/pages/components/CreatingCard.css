@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 
-.QuestionCard {
+.CreatingCard {
     margin : 0 auto;
 }
 
-.QuestionBox {
+.CreatingBox {
     box-shadow: 1px 1px 10px 13px rgb(241, 241, 241);
     height: 60rem;
 }
