@@ -8,7 +8,7 @@ function SevenDaysCard() {
     <>
     <div id = "container">
     <div className="QuestionCard">
-    <Card style={{ width: '830px'}}>
+    <Card className="Card" style={{ width: '830px'}}>
       <Card.Body className="QuestionBox">
         <br/><br/>
         <Card.Title>

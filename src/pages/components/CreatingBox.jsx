@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CreatingBox.css';
-
+import SavedPopupLast from './SavedPopupLast';
 
 function CreatingBox() {
   return (
@@ -37,10 +37,8 @@ function CreatingBox() {
       </div>
           <br/><br/>
       {/* 버튼 영역 */}
-      <div className="completed">
-        <Link to ="/mypage">
-        <Button variant="dark">작성완료</Button>
-        </Link>
+      <div className= "completed">
+        <SavedPopupLast/>
       </div>
       <br/><br/>
       {/* 버튼 영역 */}
