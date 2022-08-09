@@ -6,6 +6,7 @@ import OneBadge from './OneBadge';
 function DefaultExample() {
   return (
     <ListGroup as="ol">
+      <Link to = "/creatingpage" style={{ textDecoration: 'none' }}>
       <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -18,7 +19,8 @@ function DefaultExample() {
         <Link to = "/"><img className="icon" src='img/modify.png' alt="수정"></img></Link>
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img>
-      </ListGroup.Item>
+      </ListGroup.Item></Link>
+      <Link to = "/creatingpage" style={{ textDecoration: 'none' }}>
       <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -32,7 +34,7 @@ function DefaultExample() {
         <Link to = "/"><img className="icon" src='img/modify.png' alt="수정"></img></Link>
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img>
-      </ListGroup.Item>
+      </ListGroup.Item></Link>
     </ListGroup>
   );
 }
