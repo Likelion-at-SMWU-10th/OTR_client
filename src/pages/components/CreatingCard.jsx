@@ -6,9 +6,9 @@ import CreatingBox from './CreatingBox';
 function CreatingCard() {
   return (
     <>
-    <div className="QuestionCard">
+    <div className="CreatingCard">
     <Card style={{ width: '800px'}}>
-      <Card.Body className="QuestionBox">
+      <Card.Body className="CreatingBox">
         <br/><br/>
         <Card.Title>
             <div className= "title" >
