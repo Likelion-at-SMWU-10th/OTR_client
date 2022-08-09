@@ -7,6 +7,7 @@
 
 .QuestionBox {
     box-shadow: 1px 1px 10px 13px rgb(241, 241, 241);
+    height: 60rem;
 }
 
 .title {
