@@ -33,8 +33,9 @@ class SavedPopupLast extends React.Component {
           <Modal.Body className="modal-body"> 
             <br/><br/>
             <h3>유서작성이 완료되었습니다.</h3>
+            <br/>
+            <small>작성한 유서는 [마이페이지] - [나의 유서] 탭에서 확인하실 수 있습니다.</small>
             <br/><br/>
-            <p>작성한 유서는 [마이페이지] - [나의 유서] 탭에서 <br/>확인하실 수 있습니다.</p>
           </Modal.Body>
           </div>
           <div id="container">
