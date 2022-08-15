@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
-        <div className='login-form'>
-            <div className='text'>이메일</div>
+        <div className='login-form3'>
+            <div className='text'>아이디</div>
             <form>
-                <input type="email" name="email" class="text-field" placeholder="이메일"></input>
+                <input type="text" name="id" class="text-field" placeholder="아이디"></input>
                 <br></br>
                 <br></br>
             </form>
@@ -17,6 +17,7 @@ const Login = () => {
                 <br></br>
                 <br></br>
                 <Link to = "/loginedHome"><input type="submit" value="로그인" class="submit-btn"></input></Link>
+                <Link to = "/signup"><input type="submit" value="회원가입" class="submit-btn2"></input></Link>
             </form>
 
             <div class="links">

@@ -8,9 +8,9 @@ body {
     background-color: #ffffff;
 }
 
-.login-form3 {
+.login-form {
     width: 400px;
-    height: 600px;
+    height: 400px;
     border: 0;
     border-radius: 5px;
     background-color: #EEEFF1;
@@ -18,7 +18,18 @@ body {
     margin: 0 auto;
 }
 
-.text-field {
+.text-field1 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 284px;
+    font-weight: bolder;
+    float: right;
+}
+
+.text-field2 {
     font-size: 14px;
     margin-bottom: 10px;
     border: none;
@@ -26,6 +37,7 @@ body {
     padding: 10px;
     width: 100%;
     font-weight: bolder;
+    float: right;
 }
 
 .submit-btn {
@@ -52,23 +64,31 @@ body {
     font-weight: bolder;
 }
 
-.links {
+.signup {
     text-align: center;
-}
-
-.links a {
-    font-size: 12px;
-    color: #9b9b9b;
-}
-
-.sns {
-    width: 100%;
-    padding: 10px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 1000;
 }
 
 .text {
     text-align: left;
     font-size: 15px;
     padding: 7px;
+    font-weight: bolder;
+}
+
+.put {
+    float: left;
+}
+
+.btn {
+    color: #EEEFF1;
+    font-size: 14px;
+    background-color: #B3B3B3;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
     font-weight: bolder;
 }
