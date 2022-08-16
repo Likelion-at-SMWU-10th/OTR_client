@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './MyPage.css';
 import Toast from './components/Toast';
 import Tab from './components/Tab';
-
+import InputSample from './components/InputSample';
 
 class MyPage extends Component {
   render() {
@@ -22,7 +22,6 @@ class MyPage extends Component {
         <Tab/>
         </div>
       </div>
-      
       <br></br>
       <div className="footer">
         <Footer/>
