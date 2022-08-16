@@ -18,6 +18,8 @@ import CreatingPage from './pages/CreatingPage';
 import MyPage from './pages/MyPage';
 import SignUpPage from './pages/SignUpPage';
 import SignedUpPage from './pages/SignedUpPage';
+import AnswerGet from './pages/components/AnswerGet';
+
 
 class App extends Component {
   render() {
@@ -40,6 +42,7 @@ class App extends Component {
         <Route path="/mypage" element={<MyPage/>}></Route>
         <Route path="/signup" element={<SignUpPage/>}></Route>
         <Route path="/signedup" element={<SignedUpPage/>}></Route>
+        <Route path="/gettest" element={<AnswerGet/>}></Route>
       </Routes>
       </>
     );

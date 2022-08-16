@@ -16,6 +16,7 @@ const DaySeven = () => {
         <div id = "container">
         <DaySevenCard/>
         </div>
+
         <br/><br/>
         <Footer/>
         </>
