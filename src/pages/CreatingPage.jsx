@@ -9,7 +9,6 @@ const CreatingPage = () => {
             <div>
                 <Header/>
                 <br/><br/><br/>
-                
                 <br/><br/><br/>
                 <div id ="container">
                 <CreatingCard/>

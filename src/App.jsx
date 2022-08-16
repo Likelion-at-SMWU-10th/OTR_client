@@ -17,6 +17,8 @@ import LoginedHome from './pages/LoginedHome';
 import CreatingPage from './pages/CreatingPage';
 import MyPage from './pages/MyPage';
 
+const apiUrl = "http://127.0.0.1:8000/";
+
 class App extends Component {
   render() {
     return (
@@ -34,7 +36,7 @@ class App extends Component {
         <Route path="/daysix" element={<DaySix/>}></Route>
         <Route path="/dayseven" element={<DaySeven/>}></Route>
         <Route path="/loginedHome" element={<LoginedHome/>}></Route>
-        <Route path="/creatingpage" element={<CreatingPage/>}></Route>
+        <Route path="/creatingpage" element={<CreatingPage apiUrl={apiUrl}/>}></Route>
         <Route path="/mypage" element={<MyPage/>}></Route>
       </Routes>
       </>
