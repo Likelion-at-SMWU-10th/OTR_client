@@ -10,20 +10,16 @@
     height: 60rem;
 }
 
-.title {
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 25px;
-}
-
 .title-input {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 35px;
     border: 0px;
 }
 
-.time {
+.date-input {
     font-family: 'Nanum Myeongjo', serif;
-    text-align: left;
+    font-size: 20px;
+    border: 0px;
 }
 
 .adding-files {

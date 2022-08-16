@@ -3,6 +3,9 @@ import {Button , Modal} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SavedPopup.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
+const apiUrl = "http://127.0.0.1:8000/";
 
 class SavedPopupLast extends React.Component {
   constructor()
@@ -17,6 +20,7 @@ class SavedPopupLast extends React.Component {
     this.setState({show:!this.state.show})
   }
   render () {
+    
     return (
       <>
       <div>
@@ -51,7 +55,8 @@ class SavedPopupLast extends React.Component {
         </div>
       </>
     );
-  }
-}   
+  };
+};
+
 
 export default SavedPopupLast;
