@@ -1,28 +1,28 @@
 import axios from 'axios';
 import React, { useState, useRef, useEffect } from 'react';
-import Card from 'react-bootstrap/Card';
-import './CreatingCard.css';
+import Card from 'react-bootstrap/Card';import './CreatingCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CreatingBox from './CreatingBox';
 import Form from 'react-bootstrap/Form';
 import SavedPopupLast from './SavedPopupLast';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import CreatingBox from './CreatingBox';
 
 const CreatingCard = () => {
-  const [text, setText] = useState([]);
+
+  const [text , setText] = useState([]);
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/yuseo/').then(Response => {
+        axios.get('http://127.0.0.1:8000/otr/yuseo/').then(Response => {
         setText(Response.data);
         console.log(Response.data);
     }).catch((Error)=> {
-        console.log(Error);
+        console.log(Error) ;
     })
         }, [])
 
   return (
     <>
-    {text.map((e) => (
+    { text.map((e)=> (
     <div className="CreatingCard">
     <Card style={{ width: '800px'}}>
       <Card.Body className="CreatingBox">
@@ -51,7 +51,7 @@ const CreatingCard = () => {
           {/* 이미지영역 */}
           <div contentEditable="true">
             <div>
-              <img className="example_img" alt="example" src="img/example.png" width = "368px" height = "315px"/>
+              <img className="example_img" alt="example" src={e.image} width = "368px" height = "315px"/>
             </div>
           </div>
           <br/><br/><br/>
@@ -69,7 +69,7 @@ const CreatingCard = () => {
               placeholder = "답변을 입력해주세요" 
               style={{ height: '500px' }}
               >
-              안녕하세요
+              {e.summary}
               </Form.Control>
             </FloatingLabel>
           </div>

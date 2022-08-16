@@ -1,3 +1,5 @@
+//이페이지 안씀
+
 import React, { useState, useRef, useEffect } from 'react';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
@@ -47,7 +49,7 @@ const CreatingBox = () => {
               placeholder = "답변을 입력해주세요" 
               style={{ height: '500px' }}
               >
-              {e.summary}
+              안녕하세요
               </Form.Control>
             </FloatingLabel>
           </div>
