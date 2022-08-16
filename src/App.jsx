@@ -13,12 +13,20 @@ import DayFour from './pages/DayFour';
 import DayFive from './pages/DayFive';
 import DaySix from './pages/DaySix';
 import DaySeven from './pages/DaySeven';
+import DayOneSaved from './pages/DayOneSaved';
+import DayTwoSaved from './pages/DayTwoSaved';
+import DayThreeSaved from './pages/DayThreeSaved';
+import DayFourSaved from './pages/DayFourSaved';
+import DayFiveSaved from './pages/DayFiveSaved';
+import DaySixSaved from './pages/DaySixSaved';
+import DaySevenSaved from './pages/DaySevenSaved';
 import LoginedHome from './pages/LoginedHome';
 import CreatingPage from './pages/CreatingPage';
 import MyPage from './pages/MyPage';
 import SignUpPage from './pages/SignUpPage';
 import SignedUpPage from './pages/SignedUpPage';
-import AnswerGet from './pages/components/AnswerGet';
+import AnswerGet from './pages/AnswerGet';
+import AnswerPost from './pages/AnswerPost';
 import YuseoGet from './pages/components/YuseoGet';
 
 
@@ -38,13 +46,23 @@ class App extends Component {
         <Route path="/dayfive" element={<DayFive/>}></Route>
         <Route path="/daysix" element={<DaySix/>}></Route>
         <Route path="/dayseven" element={<DaySeven/>}></Route>
+        <Route path="/dayonesaved" element={<DayOneSaved/>}></Route>
+        <Route path="/daytwosaved" element={<DayTwoSaved/>}></Route>
+        <Route path="/daythreesaved" element={<DayThreeSaved/>}></Route>
+        <Route path="/dayfoursaved" element={<DayFourSaved/>}></Route>
+        <Route path="/dayfivesaved" element={<DayFiveSaved/>}></Route>
+        <Route path="/daysixsaved" element={<DaySixSaved/>}></Route>
+        <Route path="/daysevensaved" element={<DaySevenSaved/>}></Route>
         <Route path="/loginedHome" element={<LoginedHome/>}></Route>
         <Route path="/creatingpage" element={<CreatingPage/>}></Route>
         <Route path="/mypage" element={<MyPage/>}></Route>
         <Route path="/signup" element={<SignUpPage/>}></Route>
         <Route path="/signedup" element={<SignedUpPage/>}></Route>
         <Route path="/gettest" element={<AnswerGet/>}></Route>
+        <Route path="/posttest" element={<AnswerPost/>}></Route>
+
         <Route path="/getyuseo" element={<YuseoGet/>}></Route>
+
       </Routes>
       </>
     );

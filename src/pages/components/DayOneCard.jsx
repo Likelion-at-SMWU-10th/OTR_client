@@ -1,9 +1,12 @@
 import Card from 'react-bootstrap/Card';
 import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AnswerBox1 from './AnswerBox1'
+import SavedPopup1 from './SavedPopup1';
 import React, { useState } from 'react';
 import axios from 'axios';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+
 
 function SevenDaysCard() {
 
@@ -20,7 +23,17 @@ function SevenDaysCard() {
             </div>
             <br/><br/>
             <div className= "answer">
-            <AnswerBox1/>
+            <FloatingLabel controlId="floatingTextarea2" className="box">
+              <Form.Control
+                as="textarea"
+                placeholder = "답변을 입력해주세요" 
+                style={{ height: '300px' }}
+              />
+            </FloatingLabel>
+            <br/><br/>
+            <div className= "completed">
+            <SavedPopup1/>
+            </div>
             </div> 
         </Card.Title>
       </Card.Body>
