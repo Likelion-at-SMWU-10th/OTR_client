@@ -12,11 +12,12 @@ const AnswerGet = () => {
         console.log(Error);
     })
         }, [])
+
     return (
         <>
         {text.map((e) => (
             <div>
-              {e.q_id}, {e.body}
+              {e.q_id} {e.body}
             </div>
         ))}
         </>
