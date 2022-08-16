@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -17,8 +16,10 @@ import DaySeven from './pages/DaySeven';
 import LoginedHome from './pages/LoginedHome';
 import CreatingPage from './pages/CreatingPage';
 import MyPage from './pages/MyPage';
+import SignUpPage from './pages/SignUpPage';
+import SignedUpPage from './pages/SignedUpPage';
+import AnswerGet from './pages/components/AnswerGet';
 
-const apiUrl = "http://127.0.0.1:8000/";
 
 class App extends Component {
   render() {
@@ -37,13 +38,15 @@ class App extends Component {
         <Route path="/daysix" element={<DaySix/>}></Route>
         <Route path="/dayseven" element={<DaySeven/>}></Route>
         <Route path="/loginedHome" element={<LoginedHome/>}></Route>
-        <Route path="/creatingpage" element={<CreatingPage apiUrl={apiUrl}/>}></Route>
+        <Route path="/creatingpage" element={<CreatingPage/>}></Route>
         <Route path="/mypage" element={<MyPage/>}></Route>
+        <Route path="/signup" element={<SignUpPage/>}></Route>
+        <Route path="/signedup" element={<SignedUpPage/>}></Route>
+        <Route path="/gettest" element={<AnswerGet/>}></Route>
       </Routes>
       </>
     );
   }
 }
            
-
 export default App;

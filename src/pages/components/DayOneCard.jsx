@@ -2,7 +2,8 @@ import Card from 'react-bootstrap/Card';
 import './DayOneCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AnswerBox1 from './AnswerBox1'
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 
 function SevenDaysCard() {
 
