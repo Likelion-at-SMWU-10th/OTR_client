@@ -12,11 +12,14 @@ const AnswerGet = () => {
         console.log(Error);
     })
         }, [])
+
     return (
         <>
         {text.map((e) => (
             <div>
+
               {e.id}, {e.title}, {e.subtitle}
+              
             </div>
         ))}
         </>

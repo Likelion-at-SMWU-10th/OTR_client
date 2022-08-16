@@ -27,6 +27,7 @@ import SignUpPage from './pages/SignUpPage';
 import SignedUpPage from './pages/SignedUpPage';
 import AnswerGet from './pages/AnswerGet';
 import AnswerPost from './pages/AnswerPost';
+import YuseoGet from './pages/components/YuseoGet';
 
 
 class App extends Component {
@@ -59,6 +60,9 @@ class App extends Component {
         <Route path="/signedup" element={<SignedUpPage/>}></Route>
         <Route path="/gettest" element={<AnswerGet/>}></Route>
         <Route path="/posttest" element={<AnswerPost/>}></Route>
+
+        <Route path="/getyuseo" element={<YuseoGet/>}></Route>
+
       </Routes>
       </>
     );

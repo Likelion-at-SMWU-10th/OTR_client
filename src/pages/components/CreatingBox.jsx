@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
@@ -9,33 +8,22 @@ import './CreatingBox.css';
 import SavedPopupLast from './SavedPopupLast';
 import axios from 'axios';
 
-const apiUrl = "http://127.0.0.1:8000/";
+const CreatingBox = () => {
+  const [text, setText] = useState([]);
 
-const CreatingBox = ({apiUrl}) => {
-  const [inputs, setInputs] = useState({
-    title : '',
-    body : '',
-  });
-  const { title, contents } = inputs;
-  const testw = 1;
-  const onChange = (e) => {
-    const { value, name } = e.target;
-    setInputs ({
-      ...inputs,
-      [name]: value,
-    });
-  };
-
-const onSubmit = () => {
-  axios.post(`${apiUrl}/yuseo/`, {
-    title: inputs.title,
-    body: inputs.body,
-  }). then(response => {
-    console.log(response);
+  useEffect(() => {
+      axios.get('http://127.0.0.1:8000/yuseo/').then(Response => {
+      setText(Response.data);
+      console.log(Response.data);
+  }).catch((Error)=> {
+      console.log(Error);
   })
-}
+      }, [])
+
   return (
     <>
+    {text.map((e) => (
+      <>
       <div class = "centered">
         <div class="image-audio-area">
           {/* 이미지영역 */}
@@ -58,17 +46,21 @@ const onSubmit = () => {
               as="textarea"
               placeholder = "답변을 입력해주세요" 
               style={{ height: '500px' }}
-              />
+              >
+              {e.summary}
+              </Form.Control>
             </FloatingLabel>
           </div>
       </div>
           <br/><br/>
       {/* 버튼 영역 */}
       <div className= "completed">
-        <SavedPopupLast onclick={onSubmit}/>
+        <SavedPopupLast/>
       </div>
       <br/><br/>
       {/* 버튼 영역 */}
+    </>
+    ))}
     </>
   );
 }
