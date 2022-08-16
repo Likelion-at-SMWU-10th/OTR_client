@@ -5,7 +5,7 @@ import './QList1.css';
 function DefaultExample() {
   return (
     <ListGroup as="ol">
-      <Link to = "/dayone" style={{ textDecoration: 'none' }}>
+      <Link to = "/dayonesaved" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -20,7 +20,7 @@ function DefaultExample() {
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img></div>
       </ListGroup.Item></Link>
-      <Link to = "/daytwo" style={{ textDecoration: 'none' }}>
+      <Link to = "/daytwosaved" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -35,7 +35,7 @@ function DefaultExample() {
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img></div>
       </ListGroup.Item></Link>
-      <Link to = "/daythree" style={{ textDecoration: 'none' }}>
+      <Link to = "/daythreesaved" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -50,7 +50,7 @@ function DefaultExample() {
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img></div>
       </ListGroup.Item></Link>
-      <Link to = "/dayfour" style={{ textDecoration: 'none' }}>
+      <Link to = "/dayfoursaved" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -65,7 +65,7 @@ function DefaultExample() {
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img></div>
       </ListGroup.Item></Link>
-      <Link to = "/dayfive" style={{ textDecoration: 'none' }}>
+      <Link to = "/dayfivesaved" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -80,7 +80,7 @@ function DefaultExample() {
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img></div>
       </ListGroup.Item></Link>
-      <Link to = "/daysix" style={{ textDecoration: 'none' }}>
+      <Link to = "/daysixsaved" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -94,7 +94,7 @@ function DefaultExample() {
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img></div>
       </ListGroup.Item></Link>
-      <Link to = "/dayseven" style={{ textDecoration: 'none' }}>
+      <Link to = "/daysevensaved" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"

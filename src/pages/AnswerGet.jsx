@@ -5,7 +5,7 @@ const AnswerGet = () => {
     const [text, setText] = useState([]);
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/QnA/answer/').then(Response => {
+        axios.get('http://127.0.0.1:8000/QnA/question/').then(Response => {
         setText(Response.data);
         console.log(Response.data);
     }).catch((Error)=> {
@@ -16,7 +16,7 @@ const AnswerGet = () => {
         <>
         {text.map((e) => (
             <div>
-              {e.q_id}, {e.body}
+              {e.id}, {e.title}, {e.subtitle}
             </div>
         ))}
         </>

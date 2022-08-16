@@ -11,3 +11,102 @@
     height: 100%
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+
+.QuestionCard {
+    margin : 0 auto;
+    text-align: center;
+}
+
+.QuestionBox {
+    box-shadow: 3px 3px 11px 7px rgb(200, 200, 200);
+}
+
+.title {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+
+.modal-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    color : #f25959;
+}
+
+.orange {
+    color: #ffa858;
+}
+
+.yellow {
+    color: #e2cc00;
+}
+
+.green {
+    color: #6ab271;
+}
+
+.blue {
+    color: #75bcfd;
+}
+
+.navy {
+    color: #585bac;
+}
+
+.post {
+    padding: 20px;
+}
+
+.bb {
+    margin: 0 auto;
+    width: 100px;
+    font-size : 15px;
+    padding: 10px;
+    color: #474747; 
+    font-weight: 1000;
+    border-width: 2px;
+    border-color: rgb(131, 131, 131);
+    border-radius: 0.3em;
+}
+
+.tb {
+    background-color: #F0F0F0; 
+    font-family: 'Nanum Myeongjo', serif;
+    font-size : 20px;
+    font-weight : lighter;
+    border-width: 2px;
+    border-color: rgb(131, 131, 131);
+    border-radius: 0.2em;
+}
+
+.al {
+    text-align: left;
+    color: #606060; 
+    background-color: #F0F0F0; 
+    font-family: 'Nanum Myeongjo', serif;
+    font-size : 20px;
+    font-weight : lighter;
+    border-radius: 0.2em;
+}
+
+.font {
+    font-family: 'Nanum Myeongjo', serif;
+}
