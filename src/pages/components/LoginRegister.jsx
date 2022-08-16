@@ -10,9 +10,10 @@ function PillExample() {
       &nbsp;&nbsp;Log in&nbsp;&nbsp;
       </Badge></Link>
       {' '}
+      <Link to = "/signup">
       <Badge pill bg="dark" className="darkbutton">
       &nbsp;&nbsp;Register&nbsp;&nbsp;
-      </Badge>
+      </Badge></Link>
     </div>
   );
 }
