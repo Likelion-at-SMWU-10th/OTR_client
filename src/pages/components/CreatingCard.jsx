@@ -4,45 +4,36 @@ import Card from 'react-bootstrap/Card';
 import './CreatingCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CreatingBox from './CreatingBox';
+import Form from 'react-bootstrap/Form';
+import SavedPopupLast from './SavedPopupLast';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
-const apiUrl = "http://127.0.0.1:8000/";
+const CreatingCard = () => {
+  const [text, setText] = useState([]);
 
-const CreatingCard = ({apiUrl}) => {
-  const [inputs, setInputs] = useState({
-    title : '',
-    body : '',
-  });
-  const { title, contents } = inputs;
-  const testw = 1;
-  const onChange = (e) => {
-    const { value, name } = e.target;
-    setInputs ({
-      ...inputs,
-      [name]: value,
-    });
-  };
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/yuseo/').then(Response => {
+        setText(Response.data);
+        console.log(Response.data);
+    }).catch((Error)=> {
+        console.log(Error);
+    })
+        }, [])
 
-const onSubmit = () => {
-  axios.post(`${apiUrl}/yuseo/`, {
-    title: inputs.title,
-    body: inputs.body,
-  }). then(response => {
-    console.log(response);
-  })
-}
   return (
     <>
+    {text.map((e) => (
     <div className="CreatingCard">
     <Card style={{ width: '800px'}}>
       <Card.Body className="CreatingBox">
         <br/><br/>
         <Card.Title>
             <div className= "title" >
-              <input type="text" placeholder='제목' class="title-input"></input>
+              <input type="text" placeholder={e.title} class="title-input"></input>
             </div>
             <br/>
             <div>
-              <input type="text" placeholder='날짜와 시간을 입력하세요..' class="date-input"></input>
+              <input type="text" placeholder={e.date} class="date-input"></input>
              &nbsp;<img alt="main" src="./img/mail.png"></img>
              &nbsp;<img alt="main" src="./img/copy.png"></img>
             </div>
@@ -53,12 +44,50 @@ const onSubmit = () => {
             </div>
             <br/>
             <div className= "answer">
-            <CreatingBox/>
+            {/* <CreatingBox/> */}
+            <>
+      <div class = "centered">
+        <div class="image-audio-area">
+          {/* 이미지영역 */}
+          <div contentEditable="true">
+            <div>
+              <img className="example_img" alt="example" src="img/example.png" width = "368px" height = "315px"/>
+            </div>
+          </div>
+          <br/><br/><br/>
+          {/* 오디오영역 */}
+          <div contentEditable="true">
+            <div class="audio">
+              <audio src='img/example.mp3' width='400' controls/>
+            </div>
+          </div>
+        </div>
+          <div class="text-area" id="body" value="">
+            <FloatingLabel controlId="floatingTextarea" className="box">
+              <Form.Control
+              as="textarea"
+              placeholder = "답변을 입력해주세요" 
+              style={{ height: '500px' }}
+              >
+              안녕하세요
+              </Form.Control>
+            </FloatingLabel>
+          </div>
+      </div>
+          <br/><br/>
+      {/* 버튼 영역 */}
+      <div className= "completed">
+        <SavedPopupLast/>
+      </div>
+      <br/><br/>
+      {/* 버튼 영역 */}
+    </>
             </div>   
         </Card.Title>
       </Card.Body>
     </Card>
     </div>
+    ))}
     </>
   );
 };
