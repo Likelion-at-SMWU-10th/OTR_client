@@ -21,7 +21,9 @@ import DayFiveSaved from './pages/DayFiveSaved';
 import DaySixSaved from './pages/DaySixSaved';
 import DaySevenSaved from './pages/DaySevenSaved';
 import LoginedHome from './pages/LoginedHome';
-import CreatingPage from './pages/CreatingPage';
+import CreatingPageSaved1 from './pages/CreatingPageSaved1';
+import CreatingPageSaved2 from './pages/CreatingPageSaved2';
+import CreatingPageSaved3 from './pages/CreatingPageSaved3';
 import MyPage from './pages/MyPage';
 import SignUpPage from './pages/SignUpPage';
 import SignedUpPage from './pages/SignedUpPage';
@@ -54,15 +56,15 @@ class App extends Component {
         <Route path="/daysixsaved" element={<DaySixSaved/>}></Route>
         <Route path="/daysevensaved" element={<DaySevenSaved/>}></Route>
         <Route path="/loginedHome" element={<LoginedHome/>}></Route>
-        <Route path="/creatingpage" element={<CreatingPage/>}></Route>
+        <Route path="/creatingpagesaved1" element={<CreatingPageSaved1/>}></Route>
+        <Route path="/creatingpagesaved2" element={<CreatingPageSaved2/>}></Route>
+        <Route path="/creatingpagesaved3" element={<CreatingPageSaved3/>}></Route>
         <Route path="/mypage" element={<MyPage/>}></Route>
         <Route path="/signup" element={<SignUpPage/>}></Route>
         <Route path="/signedup" element={<SignedUpPage/>}></Route>
         <Route path="/gettest" element={<AnswerGet/>}></Route>
         <Route path="/posttest" element={<AnswerPost/>}></Route>
-
         <Route path="/getyuseo" element={<YuseoGet/>}></Route>
-
       </Routes>
       </>
     );

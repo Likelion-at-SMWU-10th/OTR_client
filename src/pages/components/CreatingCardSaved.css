@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+.CreatingCard {
+    margin : 0 auto;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.CreatingBox {
+    box-shadow: 1px 1px 10px 13px rgb(241, 241, 241);
+    height: 65rem;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.title-input {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 35px;
+    border: 0px;
+    font-weight: bold;
+}
+
+.date-input {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    border: 0px;
+    width: 120px;
+}
+
+.time-input {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    border: 0px;
+    width: 85px;
+}
+
+.adding-files {
+    text-align: right;
+}
+
+.inputbox {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+}
+
+
+.adding-files {
+    text-align: right;
+}
+
+.inputbox {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+}
