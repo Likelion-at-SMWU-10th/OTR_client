@@ -52,7 +52,7 @@ class DayFive extends Component {
         <Card.Title>
             <div className="post">
             <form className="post" onSubmit={this.handleSubmit}>
-            <div className= "title" value={this.state.q_id}
+            <div className= "font0" value={this.state.q_id}
                 onChange={this.onTitleChange} unrequired>
             Q5. 나의 삶은 어떤 의미를 가지고 있나요? 나의 가치관은 무엇인가요?
             </div><br></br>

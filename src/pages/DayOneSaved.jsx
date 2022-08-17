@@ -32,12 +32,12 @@ const DayOneSaved = () => {
         <Card.Title>
             <div className="post">
             <form className="post">
-            <div className= "title">
+            <div className= "font0">
             Q1. 죽음에 대해 생각해 본 적이 있나요? 당신에게 죽음이란 무엇인가요?
             </div><br></br>
             <div className='al'>
             {text.map((e) => (
-                <div className='font'>
+                <div className='font2'>
                   {e.body}
                 </div>
             ))}</div><br></br><br></br>

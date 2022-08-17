@@ -52,7 +52,7 @@ class DayTwo extends Component {
         <Card.Title>
             <div className="post">
             <form className="post" onSubmit={this.handleSubmit}>
-            <div className= "title" value={this.state.q_id}
+            <div className= "font0" value={this.state.q_id}
                 onChange={this.onTitleChange} unrequired>
             Q2. 나의 장례식은 어떤 분위기였으면?
             </div><br></br>

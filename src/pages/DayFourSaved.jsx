@@ -32,12 +32,12 @@ const DayFourSaved = () => {
         <Card.Title>
             <div className="post">
             <form className="post">
-            <div className= "title">
+            <div className= "font0">
             Q4. 인생에서 가장 행복했던 일을 적어주세요.
             </div><br></br>
             <div className='al'>
             {text.map((e) => (
-                <div className='font'>
+                <div className='font2'>
                   {e.body}
                 </div>
             ))}</div><br></br><br></br>

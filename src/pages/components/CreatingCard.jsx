@@ -5,14 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import SavedPopupLast from './SavedPopupLast';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import CreatingBox from './CreatingBox';
 
 const CreatingCard = () => {
 
   const [text , setText] = useState([]);
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/otr/yuseo/').then(Response => {
+        axios.get('http://127.0.0.1:8000/otr/yuseo1/').then(Response => {
         setText(Response.data);
         console.log(Response.data);
     }).catch((Error)=> {
