@@ -49,7 +49,7 @@ const CreatingBox = () => {
               placeholder = "답변을 입력해주세요" 
               style={{ height: '500px' }}
               >
-              안녕하세요
+              {e.summary}
               </Form.Control>
             </FloatingLabel>
           </div>
