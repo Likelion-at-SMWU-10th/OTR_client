@@ -2,11 +2,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Link } from 'react-router-dom';
 import './QList2.css';
 import OneBadge from './OneBadge';
+import YuseoBarFirst from './YuseoBarFirst';
+import YuseoBarSecond from './YuseoBarSecond';
+import YuseoBarThird from './YuseoBarThird';
 
 const QList2 = () => {
   return (
-    <ListGroup as="ol">
-      <Link to = "/creatingpagesaved1" style={{ textDecoration: 'none' }}>
+    <>
+      {/* <Link to = "/creatingpagesaved1" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
@@ -20,8 +23,9 @@ const QList2 = () => {
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img>
         </ListGroup.Item>
-      </Link>
-      <Link to = "/creatingpagesaved2" style={{ textDecoration: 'none' }}>
+      </Link> */}
+      <YuseoBarFirst/>
+      {/* <Link to = "/creatingpagesaved2" style={{ textDecoration: 'none' }}>
         <ListGroup.Item
             as="li"
             className="d-flex justify-content-between align-items-start"
@@ -36,8 +40,9 @@ const QList2 = () => {
             &nbsp;&nbsp;&nbsp;
             <img className="icon" src='img/delete.png' alt="삭제"></img>
         </ListGroup.Item>
-      </Link>
-    <Link to = "/creatingpagesaved3" style={{ textDecoration: 'none' }}>
+      </Link> */}
+      <YuseoBarSecond/>
+      {/* <Link to = "/creatingpagesaved3" style={{ textDecoration: 'none' }}>
     <ListGroup.Item
     as="li"
     className="d-flex justify-content-between align-items-start"
@@ -52,10 +57,11 @@ const QList2 = () => {
     &nbsp;&nbsp;&nbsp;
     <img className="icon" src='img/delete.png' alt="삭제"></img>
     </ListGroup.Item>
-    </Link>
+      </Link> */}
+      <YuseoBarThird/>
       <br/><br/><br/>
-      <strong>유서는 최대 3개까지만 작성할 수 있습니다 :)</strong>
-    </ListGroup>
+      <p class ="centered">유서는 최대 3개까지만 작성할 수 있습니다 :)</p>
+    </>
   );
 }
 
