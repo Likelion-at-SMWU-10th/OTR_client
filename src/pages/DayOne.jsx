@@ -8,6 +8,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+
 class DayOne extends Component {
 
     state = {
@@ -41,7 +42,6 @@ class DayOne extends Component {
     render() {
     return (
         <>
-
         <Header/>
         <br/><br/><br/>
         <div class="notice"><img alt="notice"src={SevenDaysNotice}/></div>
@@ -62,8 +62,11 @@ class DayOne extends Component {
                 onChange={this.onBodyChange} required
             /><br></br><br></br>
             <div>
-            <button className="bb" type="submit">저장하기</button>&nbsp;&nbsp;&nbsp;&nbsp;
-            <Link to="/dayonesaved"><button className="bb">내 답변</button></Link></div>
+            <button className="bb" type="submit">&nbsp;저장하기&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Link to="/dayonesaved">
+            <button className="bb" type="submit">&nbsp;내 답변&nbsp;</button>
+            </Link>
+            </div>
             </form>
             </div>
         </Card.Title>

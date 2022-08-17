@@ -21,8 +21,8 @@
 }
 
 .text-area {
-    float: right;
-    display: inline-block;
+    /* float: right; */
+    /* display: inline-block; */
 }
 
 #floatingTextarea {
@@ -30,11 +30,11 @@
     font-family: 'Nanum Myeongjo', serif;
     font-size : 20px;
     font-weight : lighter;
-    width: 390px;
+    width: 760px;
 }
 
 .completed {
     clear:both;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 0px;
 }

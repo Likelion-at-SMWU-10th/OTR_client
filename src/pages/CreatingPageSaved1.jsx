@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import CreatingCard from './components/CreatingCard';
+import CreatingCardSaved1 from './components/CreatingCardSaved1';
 
-const CreatingPage = () => {
+const CreatingPageSaved = () => {
     return (
         <>
             <div>
@@ -11,7 +11,7 @@ const CreatingPage = () => {
                 <br/><br/><br/>
                 <br/><br/><br/>
                 <div id ="container">
-                <CreatingCard/>
+                <CreatingCardSaved1/>
                 </div>
                 <br/><br/>
                 <Footer/>
@@ -20,4 +20,4 @@ const CreatingPage = () => {
     );
 };
 
-export default CreatingPage;
+export default CreatingPageSaved;

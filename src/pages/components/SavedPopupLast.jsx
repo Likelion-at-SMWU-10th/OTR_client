@@ -24,7 +24,7 @@ class SavedPopupLast extends React.Component {
     return (
       <>
       <div>
-        <Button variant="secondary" onClick={()=>{this.handleModal()}}> 저장하기 </Button>
+        <Button variant="secondary" onClick={()=>{this.handleModal()}}> 목록으로 돌아가기 </Button>
         <Modal show={this.state.show} onHide={()=>this.handleModal()}>
           <div id="container">
           <Modal.Header className="modal-header">
