@@ -32,12 +32,12 @@ const DaySixSaved = () => {
         <Card.Title>
             <div className="post">
             <form className="post">
-            <div className= "title">
+            <div className= "font0">
             Q6. 나는 어떨 때 고마움과 미안함을 느끼나요? 고마운 사람과 미안한 사람이 생각난다면 적어보세요.
             </div><br></br>
             <div className='al'>
             {text.map((e) => (
-                <div className='font'>
+                <div className='font2'>
                   {e.body}
                 </div>
             ))}</div><br></br><br></br>

@@ -52,7 +52,7 @@ class DayFour extends Component {
         <Card.Title>
             <div className="post">
             <form className="post" onSubmit={this.handleSubmit}>
-            <div className= "title" value={this.state.q_id}
+            <div className= "font0" value={this.state.q_id}
                 onChange={this.onTitleChange} unrequired>
             Q4. 인생에서 가장 행복했던 일을 적어주세요.
             </div><br></br>

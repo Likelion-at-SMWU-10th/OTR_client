@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 class DayOne extends Component {
+
     state = {
         q_id: "1",
         body: ""
@@ -52,7 +53,7 @@ class DayOne extends Component {
         <Card.Title>
             <div className="post">
             <form className="post" onSubmit={this.handleSubmit}>
-            <div className= "title" value={this.state.q_id}
+            <div className= "font0" value={this.state.q_id}
                 onChange={this.onTitleChange} required>
             Q1. 죽음에 대해 생각해 본 적이 있나요? 당신에게 죽음이란 무엇인가요?
             </div><br></br>
@@ -73,6 +74,7 @@ class DayOne extends Component {
     </Card>
     </div>
     </div>
+    
     <br/><br/>
     <Footer/>
         </>
