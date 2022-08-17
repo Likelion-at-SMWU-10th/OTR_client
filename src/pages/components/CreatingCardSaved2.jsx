@@ -7,6 +7,8 @@ import Form from 'react-bootstrap/Form';
 import SavedPopupLast from './SavedPopupLast';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import CreatingBox from './CreatingBox';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 const CreatingCard2 = () => {
 
@@ -90,7 +92,9 @@ const CreatingCard2 = () => {
           <br/><br/><br/>
         {/* 팝업 영역 시작  */}
             <div className= "completed">
-              <SavedPopupLast/>
+              <Link to = "/mypage">
+                <Button variant="secondary">목록으로 돌아가기</Button>
+              </Link>
             </div>
         {/* 팝업 영역 끝  */}
           <br/><br/>
