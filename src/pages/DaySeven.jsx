@@ -52,7 +52,7 @@ class DaySeven extends Component {
         <Card.Title>
             <div className="post">
             <form className="post" onSubmit={this.handleSubmit}>
-            <div className= "title" value={this.state.q_id}
+            <div className= "font0" value={this.state.q_id}
                 onChange={this.onTitleChange} unrequired>
             Q7. 당신은 앞으로 어떻게 살고 싶나요? 또, 어떻게 죽고 싶나요?
             </div><br></br>

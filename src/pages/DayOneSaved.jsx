@@ -56,6 +56,7 @@ const DayOneSaved = () => {
                 </Card.Title>
             </Card.Body>
             </Card>
+
             </div>
             </div>
         {/* 문답콘텐츠 */}

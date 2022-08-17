@@ -32,12 +32,12 @@ const DayTwoSaved = () => {
         <Card.Title>
             <div className="post">
             <form className="post">
-            <div className= "title">
+            <div className= "font0">
             Q2. 나의 장례식은 어떤 분위기였으면 좋겠나요?
             </div><br></br>
             <div className='al'>
             {text.map((e) => (
-                <div className='font'>
+                <div className='font2'>
                   {e.body}
                 </div>
             ))}</div><br></br><br></br>
