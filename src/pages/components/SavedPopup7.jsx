@@ -38,7 +38,7 @@ class SavedPopup7 extends React.Component {
           <div id="container">
           <Modal.Footer>
             <div className="save-button">
-              <Link to = "/daysevensaved">
+              <Link to = "/creatingpage">
               <Button class="white-button" variant="outline-dark">&nbsp;완료&nbsp;</Button>
               </Link>
             </div>

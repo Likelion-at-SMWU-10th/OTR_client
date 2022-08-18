@@ -40,7 +40,7 @@ class CompletedPopup extends React.Component {
           <div id="container">
           <Modal.Footer>
             <div className="save-button">
-              <Link to = "/dayfoursaved">
+              <Link to = "/mypage">
               <Button class="white-button" variant="outline-dark">&nbsp;완료&nbsp;</Button>
               </Link>
             </div>
