@@ -67,8 +67,8 @@ render(){
             </div>
             <br/>
             <div>
-            <input type="text" placeholder="날짜" class="date-input"></input>
-            <input type="text" placeholder="시간" class="time-input"></input>
+            <input type="text" placeholder="2022-01-01" class="date-input"></input>
+            <input type="text" placeholder="00:00" class="time-input"></input>
              &nbsp;<img alt="main" src="./img/mail.png"></img>
              &nbsp;<img alt="main" src="./img/copy.png"></img>
             </div>
