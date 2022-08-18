@@ -5,8 +5,6 @@ import './SavedPopup.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const apiUrl = "http://127.0.0.1:8000/";
-
 class SavedPopupLast extends React.Component {
   constructor()
   {
@@ -24,7 +22,7 @@ class SavedPopupLast extends React.Component {
     return (
       <>
       <div>
-        <Button variant="secondary" onClick={()=>{this.handleModal()}}> 목록으로 돌아가기 </Button>
+        <Button type="submit" variant="secondary" onClick={()=>{this.handleModal()}}> 저장하기 </Button>
         <Modal show={this.state.show} onHide={()=>this.handleModal()}>
           <div id="container">
           <Modal.Header className="modal-header">
@@ -46,7 +44,7 @@ class SavedPopupLast extends React.Component {
           <Modal.Footer>
             <div className="save-button">
               <Link to = "/mypage">
-              <Button class="white-button" variant="outline-dark">&nbsp;완료&nbsp;</Button>
+              <Button class="white-button" variant="outline-dark">목록으로</Button>
               </Link>
             </div>
           </Modal.Footer>
