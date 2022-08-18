@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
+import SavedPopup1 from './components/SavedPopup1';
 
 class DayOne extends Component {
 
@@ -62,10 +62,11 @@ class DayOne extends Component {
                 onChange={this.onBodyChange} required
             /><br></br><br></br>
             <div>
-            <button className="bb" type="submit">&nbsp;저장하기&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <SavedPopup1/>
+            {/* <button className="bb" type="submit">&nbsp;저장하기&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
             <Link to="/dayonesaved">
             <button className="bb" type="submit">&nbsp;내 답변&nbsp;</button>
-            </Link>
+            </Link> */}
             </div>
             </form>
             </div>

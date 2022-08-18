@@ -20,7 +20,7 @@ class CompletedPopup extends React.Component {
     return (
       <>
       <div>
-        <Button className="bb" onClick={()=>{this.handleModal()}}> 저장하기 </Button>
+        <Button type="submit" className="bb" onClick={()=>{this.handleModal()}}> 저장하기 </Button>
         <Modal show={this.state.show} onHide={()=>this.handleModal()}>
           <div id="container">
           <Modal.Header className="modal-header">

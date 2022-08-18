@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import SavedPopup7 from './components/SavedPopup7';
 
 class DaySeven extends Component {
     state = {
@@ -40,7 +41,6 @@ class DaySeven extends Component {
     render() {
     return (
         <>
-
         <Header/>
         <br/><br/><br/>
         <div class="notice"><img alt="notice"src={SevenDaysNotice}/></div>
@@ -61,8 +61,10 @@ class DaySeven extends Component {
                 onChange={this.onBodyChange} required
             /><br></br><br></br>
             <div>
-            <button className="bb" type="submit">저장하기</button>&nbsp;&nbsp;&nbsp;&nbsp;
-            <Link to="/daysevensaved"><button className="bb">내 답변</button></Link></div>
+              <SavedPopup7/>
+            {/* <button className="bb" type="submit">저장하기</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Link to="/daysevensaved"><button className="bb">내 답변</button></Link> */}
+            </div>
             </form>
             </div>
         </Card.Title>
