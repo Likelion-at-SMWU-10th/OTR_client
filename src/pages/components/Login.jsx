@@ -19,14 +19,6 @@ const Login = () => {
                 <Link to = "/loginedHome"><input type="submit" value="로그인" class="submit-btn"></input></Link>
                 <Link to = "/signup"><input type="submit" value="회원가입" class="submit-btn2"></input></Link>
             </form>
-            <div className='text'>비밀번호 확인</div>
-            <form>
-                <input type="password" name="password" class="text-field" placeholder="비밀번호"></input>
-                <br></br>
-                <br></br>
-                <Link to = "/loginedHome"><input type="submit" value="로그인" class="submit-btn"></input></Link>
-                <Link to = "/signup"><input type="submit" value="회원가입" class="submit-btn2"></input></Link>
-            </form>
             <div class="links">
                 <a href="#">비밀번호를 잊으셨나요?</a>
             </div>
