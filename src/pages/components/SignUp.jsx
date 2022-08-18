@@ -26,10 +26,10 @@ const SignUp = () => {
                 placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)"></input>
             </form>
             <br/><br/><br/>
-            <div className='text'>비밀번호 확인</div>
+            <div className='text'>닉네임</div>
             <form>
                 <input type="password" name="password" class="text-field2"
-                placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)"></input>
+                placeholder="닉네임입력"></input>
             </form>    
                 <br></br>
                 <br></br>
