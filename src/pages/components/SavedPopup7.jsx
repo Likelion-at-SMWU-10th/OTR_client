@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './SavedPopup.css';
 import { Link } from 'react-router-dom';
 
-class CompletedPopup extends React.Component {
+class SavedPopup7 extends React.Component {
   constructor()
   {
     super()
@@ -25,22 +25,20 @@ class CompletedPopup extends React.Component {
           <div id="container">
           <Modal.Header className="modal-header">
           <div class ="popup-notice">
-          <br/>무지개의 <span class="green">네번째 색</span>이 채워졌습니다.
-          <br/>앞으로 일주일 간 열리는 문답을 모두 작성하여
-          <br/>무지개를 완성해보세요!
-          <br/>
+          <br/>🎉 축하합니다!  <span class="navy">7개의 문답</span>을 모두 작성했습니다. 
+          <br/>마지막 단계로, 유서를 작성해볼까요?
           </div>
           </Modal.Header>
           </div>
           <div id="container">
           <Modal.Body className="modal-body"> 
-            <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow4.png" /><br/><br/>
+            <br/><br/><img className="rainbow" alt="rainbow" src="img/rainbow7.png" /><br/><br/>
           </Modal.Body>
           </div>
           <div id="container">
           <Modal.Footer>
             <div className="save-button">
-              <Link to = "/mypage">
+              <Link to = "/creatingpage">
               <Button class="white-button" variant="outline-dark">&nbsp;완료&nbsp;</Button>
               </Link>
             </div>
@@ -52,4 +50,4 @@ class CompletedPopup extends React.Component {
     );
   }
 }   
-export default CompletedPopup;
+export default SavedPopup7;

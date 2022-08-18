@@ -43,7 +43,13 @@ const DayFiveSaved = () => {
             ))}</div><br></br><br></br>
             <div>
             <Link to="/dayfive">
-            <button className="bb">답변 추가</button></Link></div>
+            <button className="bb">답변 추가</button>
+            </Link>
+            &nbsp; &nbsp; 
+            <Link to="/mypage">
+            <button className="bb">목록으로</button>
+            </Link>
+            </div>
             </form>
             </div>
         </Card.Title>
