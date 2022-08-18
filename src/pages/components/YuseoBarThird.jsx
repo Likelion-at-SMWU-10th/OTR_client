@@ -29,9 +29,9 @@ const YuseoBarThird = () => {
             <div className="fw-bold" id="title">
             <img className="icon" src='img/star.png' alt="수정"></img>
             &nbsp;{e.title}</div>
-            <div id="content">{e.date} 에 작성된 유서입니다.</div>
+            <div id="content">{e.date} {e.time} 에 작성된 유서입니다.</div>
         </div>
-        <Link to = "/"><img className="icon" src='img/modify.png' alt="수정"></img></Link>
+        <Link to = "/creatingpage"><img className="icon" src='img/modify.png' alt="수정"></img></Link>
         &nbsp;&nbsp;&nbsp;
         <img className="icon" src='img/delete.png' alt="삭제"></img>
         </ListGroup.Item>
