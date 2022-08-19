@@ -9,6 +9,7 @@ const Login = () => {
   const [errors, setErrors] = useState(false)
 
   const onSubmit = (e) => {
+    console.log("이벤트 들어옴");
     e.preventDefault()
 
     const user = {
@@ -17,7 +18,11 @@ const Login = () => {
     }
 
     Axios.post('http://127.0.0.1:8000/login/', user)
+    // Axios.post('http://ubuntu@ec2-13-125-134-114.ap-northeast-2.compute.amazonaws.com:8080/login/', user)
       .then(res => {
+        console.log(res.data.token.access); //이게 토큰이고, 이걸 header에 넣어줘야 합니다! jwt react header 구글링해보면 될듯
+        const { accessToken } = res.data.token.access;
+        Axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
         if (res.data.key) {
           localStorage.clear()
           localStorage.setItem('token', res.data.key)
@@ -34,7 +39,7 @@ const Login = () => {
       })
       .catch(err => {
         console.log(err)
-        alert('아이디 또는 비밀번호가 일치하지 않습니다')
+        // alert('아이디 또는 비밀번호가 일치하지 않습니다') -> 아이디 입력만 해도 바로 alert실행되어서 잠시 주석처리
         setLogin_id('')
         setPassword('')
       })
@@ -43,7 +48,7 @@ const Login = () => {
 
     return (
         <div className='login-form3'>
-            <form onSubmit={onSubmit}>
+            <form onClick={onSubmit}>
             <div className='text'>아이디</div>
                 <input type="id" name="id" value={login_id}
             required class="text-field" placeholder="아이디"
