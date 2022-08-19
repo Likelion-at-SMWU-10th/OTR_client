@@ -12,7 +12,7 @@ function PillExample() {
       {' '}
       <Link to = "/signup">
       <Badge pill bg="dark" className="darkbutton">
-      &nbsp;&nbsp;Register&nbsp;&nbsp;
+      &nbsp;&nbsp;Register!&nbsp;&nbsp;
       </Badge></Link>
     </div>
   );
