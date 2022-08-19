@@ -12,7 +12,7 @@ body {
     width: 400px;
     border: 0;
     border-radius: 5px;
-    background-color: #EEEFF1;
+    /* background-color: #EEEFF1; */
     padding: 20px;
     margin: 0 auto;
 }
@@ -26,6 +26,7 @@ body {
     width: 284px;
     font-weight: bolder;
     float: right;
+    background-color: #EEEFF1;
 }
 
 .text-field2 {
@@ -37,6 +38,7 @@ body {
     width: 100%;
     font-weight: bolder;
     float: right;
+    background-color: #EEEFF1;
 }
 
 .submit-btn {

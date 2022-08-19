@@ -12,7 +12,6 @@ const SignUpPage = () => {
         <SignUp />
         <br/>
         <br/>
-        <Footer />
         </>
     );
 };
