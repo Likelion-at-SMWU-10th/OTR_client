@@ -24,12 +24,18 @@ const SignUp = () => {
             <form>
                 <input type="password" name="password" class="text-field2"
                 placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)"></input>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <Link to = "/signedup"><input type="submit" value="가입하기" class="submit-btn2"></input></Link>
             </form>
+            <br/><br/><br/>
+            <div className='text'>닉네임</div>
+            <form>
+                <input type="password" name="password" class="text-field2"
+                placeholder="닉네임입력"></input>
+            </form>    
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            <Link to = "/signedup"><input type="submit" value="가입하기" class="submit-btn2"></input></Link>
         </div>
     );
 };

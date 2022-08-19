@@ -32,6 +32,8 @@ import AnswerGet from './pages/AnswerGet';
 import AnswerPost from './pages/AnswerPost';
 import YuseoGet from './pages/components/YuseoGet';
 import TestPage from './pages/TestPage';
+import LoginTest from './pages/LoginTest';
+import SignupTest from './pages/SignupTest';
 
 class App extends Component {
   render() {
@@ -68,6 +70,8 @@ class App extends Component {
         <Route path="/posttest" element={<AnswerPost/>}></Route>
         <Route path="/getyuseo" element={<YuseoGet/>}></Route>
         <Route path="/testing" element={<TestPage/>}></Route>
+        <Route path="/logintest" element={<LoginTest/>}></Route>
+        <Route path="/signuptest" element={<SignupTest/>}></Route>
       </Routes>
       </>
     );
