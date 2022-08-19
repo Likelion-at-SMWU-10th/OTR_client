@@ -41,6 +41,7 @@ class LoginModal extends React.Component {
               <Link to = "/login">
               <Button class="white-button" variant="outline-dark">&nbsp;로그인&nbsp;</Button>
               </Link>
+              
             </div>
           </Modal.Footer>
           </div>
