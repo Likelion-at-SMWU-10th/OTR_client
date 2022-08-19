@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 
-const LoginPage = () => {
+const LoginTest = () => {
 
-  const [email, setEmail] = useState('')
+  const [login_id, setLogin_id] = useState('')
   const [password, setPassword] = useState('')
   const [errors, setErrors] = useState(false)
 
@@ -11,19 +11,20 @@ const LoginPage = () => {
     e.preventDefault()
 
     const user = {
-      email: email,
+      login_id: login_id,
       password: password
     }
 
-    Axios.post('http://127.0.0.1:8000/signup', user)
+    Axios.post('http://127.0.0.1:8000/login/', user)
       .then(res => {
         if (res.data.key) {
           localStorage.clear()
           localStorage.setItem('token', res.data.key)
           // 사용하려면 App.js에서 /로 라우팅해야 한다
-          window.location.replace('/')
+          // window.location.replace('/')
+          console.log(res.data);
         } else {
-          setEmail('')
+          setLogin_id('')
           setPassword('')
           localStorage.clear()
           setErrors(true)
@@ -32,7 +33,7 @@ const LoginPage = () => {
       .catch(err => {
         console.log(err)
         alert('아이디 또는 비밀번호가 일치하지 않습니다')
-        setEmail('')
+        setLogin_id('')
         setPassword('')
       })
   }
@@ -41,14 +42,14 @@ const LoginPage = () => {
     <>
       <h1>로그인</h1>
       <br />
-      {errors === true && <h2>Cannot log in with provided credentials</h2>}
+      {/* {errors === true && <h2>Cannot log in with provided credentials</h2>} */}
         <form onSubmit={onSubmit}>
           <label>아이디:</label>
           <input
-            type='ID'
-            value={email}
+            type='id'
+            value={login_id}
             required
-            onChange={e => setEmail(e.target.value)}
+            onChange={e => setLogin_id(e.target.value)}
           />
           <label>비밀번호:</label>
           <input
@@ -63,4 +64,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage;
+export default LoginTest;

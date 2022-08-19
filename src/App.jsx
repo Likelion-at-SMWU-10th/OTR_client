@@ -34,6 +34,7 @@ import YuseoGet from './pages/components/YuseoGet';
 import TestPage from './pages/TestPage';
 import LoginTest from './pages/LoginTest';
 import SignupTest from './pages/SignupTest';
+import InputTest from './pages/InputTest';
 
 class App extends Component {
   render() {
@@ -72,6 +73,7 @@ class App extends Component {
         <Route path="/testing" element={<TestPage/>}></Route>
         <Route path="/logintest" element={<LoginTest/>}></Route>
         <Route path="/signuptest" element={<SignupTest/>}></Route>
+        <Route path="/inputtest" element={<InputTest/>}></Route>
       </Routes>
       </>
     );
