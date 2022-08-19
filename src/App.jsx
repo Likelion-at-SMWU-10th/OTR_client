@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/" element={<LoginedHome/>}></Route>
         <Route path="/details" element={<AboutOtr/>}></Route>
         <Route path="/sevendays" element={<SevenDays/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
@@ -59,7 +59,6 @@ class App extends Component {
         <Route path="/dayfivesaved" element={<DayFiveSaved/>}></Route>
         <Route path="/daysixsaved" element={<DaySixSaved/>}></Route>
         <Route path="/daysevensaved" element={<DaySevenSaved/>}></Route>
-        <Route path="/loginedHome" element={<LoginedHome/>}></Route>
         <Route path="/creatingpage" element={<CreatingPage/>}></Route>
         <Route path="/creatingpagesaved1" element={<CreatingPageSaved1/>}></Route>
         <Route path="/creatingpagesaved2" element={<CreatingPageSaved2/>}></Route>
