@@ -25,7 +25,7 @@ class LoginModal extends React.Component {
           <div id="container">
           <Modal.Header className="modal-header">
           <div class ="popup-notice">
-          <br/>회원가입이 완료되었습니다.
+          <br/>회원가입이 완료되었습니다!
           <br/>
           </div>
           </Modal.Header>
@@ -41,11 +41,12 @@ class LoginModal extends React.Component {
               <Link to = "/login">
               <Button class="white-button" variant="outline-dark">&nbsp;로그인&nbsp;</Button>
               </Link>
-              
+
             </div>
           </Modal.Footer>
           </div>
         </Modal>
+
         </div>
       </>
     );
