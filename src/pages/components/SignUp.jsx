@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import Axios from 'axios';
 import './SignUp.css';
 import { Link } from 'react-router-dom';
+import LoginModal from './LoginModal';
 
 const SignUp = () => {
+
     const [login_id, setLogin_id] = useState('')
     const [password, setPassword] = useState('')
     const [email, setEmail] = useState('')
@@ -119,7 +121,8 @@ const SignUp = () => {
                 />
             </form>    
                 <br/><br/> <br/> <br/> 
-                <input type="submit" value="가입하기" class="submit-btn2"></input>
+                {/* <input type="submit" value="가입하기" class="submit-btn2"></input> */}
+                <div className="login-modal"><LoginModal/></div>
             </div>
         </form>   
     );

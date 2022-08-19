@@ -94,3 +94,7 @@ body {
     border-radius: 5px;
     font-weight: bolder;
 }
+
+.login-modal {
+    text-align: center;
+}
