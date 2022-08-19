@@ -15,7 +15,7 @@ const LoginPage = () => {
       password: password
     }
 
-    Axios.post('http://127.0.0.1:8000/login', user)
+    Axios.post('http://127.0.0.1:8000/signup', user)
       .then(res => {
         if (res.data.key) {
           localStorage.clear()
@@ -30,7 +30,7 @@ const LoginPage = () => {
         }
       })
       .catch(err => {
-        console.clear()
+        console.log(err)
         alert('아이디 또는 비밀번호가 일치하지 않습니다')
         setEmail('')
         setPassword('')
